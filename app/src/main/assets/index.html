@@ -1,0 +1,2068 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-T7C5DLXM');</script>
+    <!-- End Google Tag Manager -->
+    <head>
+        <title>EEditor WS | Editor</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--link rel="icon" type="image/x-icon" href="img/ico/ico.svg"-->
+        <link rel="icon" type="image/x-icon" href="img/ico/icoRev.png">
+        <script src="lands_data.js"></script>
+        <script src="js/base.js"></script>
+        <script src="js/dropdown.js"></script>
+        <script src="js/notification.js"></script>
+        <script src="js/translate/table.js"></script>
+        <script src="js/translate/translate.js"></script>
+        <script src="js/test/translate2.js"></script>
+        <script src="js/utils.js"></script>
+        <script src="script.js"></script>
+        <script src="js/language.js"></script>
+        <script src="js/translator.js"></script>
+        <script src="js/hello.js"></script>
+        <script src="js/head.js"></script>
+        <script src="js/map/map-edit.js"></script>
+        <script src="js/countries.js"></script>
+        <script src="js/events/events-main.js"></script>
+        <script src="js/events/events-draggable.js"></script>
+        <script src="js/countries-draggable.js"></script>
+        <script src="js/events-draggable.js"></script>
+        <script src="js/reforms.js"></script>
+        <script src="js/auth.js"></script>
+        <script src="js/backup.js"></script>
+        <script src="js/reqbon.js"></script>
+        <script src="js/migrations.js"></script>
+        <script src="js/test/move.js"></script>
+        <script src="js/test/move2.js"></script>
+        <script src="js/test/copyEcoPopRes.js"></script>
+        <script src="js/coop/coop.js"></script>
+        <script src="js/test/ads.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/simple-peer@9.11.1/simplepeer.min.js"></script>
+        <script src="https://js.pusher.com/8.2.0/pusher.min.js"></script>
+        <script src="page/library/modern/unique.js"></script>
+        <link rel="stylesheet" href="css/!.css">
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/elib/dropdown.css">
+        <link rel="stylesheet" href="css/countries.css">
+        <link rel="stylesheet" href="css/events.css">
+        <link rel="stylesheet" href="css/reforms.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/head.css">
+        <link rel="stylesheet" href="css/list.css">
+        <link rel="stylesheet" href="css/notification.css">
+        <link rel="stylesheet" href="css/test/move.css">
+        <link rel="stylesheet" href="css/backup.css">
+        <link rel="stylesheet" href="css/coop.css">
+        <link rel="stylesheet" href="css/map.css">
+        <link rel="stylesheet" href="css/input.css">
+        <link rel="stylesheet" href="css/mobile/mobile-main.css">
+        <link rel="stylesheet" href="css/mobile/mobile-desktop.css">
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-9HFX1FVLMV"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-9HFX1FVLMV');
+        </script>
+        <!-- End Google tag (gtag.js) -->
+    </head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SWBTV2B19R"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-SWBTV2B19R');
+    </script>
+    <!-- End Google tag (gtag.js) -->
+    <!-- FireBase tag -->
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyARKDShVfGzn6K7t5B-NpmEKZ2hNfPbb7A",
+          authDomain: "eeditor-ws.firebaseapp.com",
+          projectId: "eeditor-ws",
+          storageBucket: "eeditor-ws.firebasestorage.app",
+          messagingSenderId: "702031560059",
+          appId: "1:702031560059:web:2939e35c6a03e83decd1de",
+          measurementId: "G-BD85FCJNXX"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+    </script>
+    <!-- End FireBase tag -->
+    <body class="dark dark-theme" data-lang="en">
+        <!-- Google Tag Manager (noscript) -->
+            <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T7C5DLXM"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+        <nav class="nav-header">
+            <div class="logo">
+                <img class="logo-icon" src="img/ico/ico.svg" alt="EEditor Logo">
+                <!--img class="logo-icon" src="img/ico/icoRev.png" alt="EEditor Logo"-->
+                <h1 class="logo-text">EEditor</h1>
+            </div>
+            <script>
+                document.addEventListener('DOMContentLoaded', () => {
+                    window.countryManager = new CountryManager();
+                });
+            </script>
+            <br>
+            <div class="nav-buttons-container">
+                <button class="nav-button active" data-page="main">
+                    <img class="button-icon" src="img/ui/home.svg">
+                    <span class="button-text">Редактор</span>
+                </button>
+                <button class="nav-button" data-page="countries" onclick="window.countryManager.updateCountriesList()">
+                    <img class="button-icon" src="img/ui/flag.svg">
+                    <span class="button-text">Страны</span>
+                </button>
+                <button class="nav-button" data-page="events">
+                    <img class="button-icon" src="img/ui/calendar.svg">
+                    <span class="button-text">События</span>
+                </button>
+                <button class="nav-button dev_thing" data-page="map-edit">
+                    <svg class="button-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                    </svg>
+                    <span class="button-text">Карта</span>
+                </button>
+            </div>
+            <div class="nav-actions">
+                <button id="force-save" class="action-button save-button">
+                    <img src="img/ui/save.svg">
+                    <span class="button-text">Сохранить</span>
+                </button>
+                <div class="nav-icons">
+                    <a href="page/settings.html?return=main" id="settings-button" class="icon-action-button settings" title="Настройки">
+                        <img src="img/ui/settings.svg">
+                    </a>
+                    <div class="language-switcher">
+                        <button id="currentLangChooser" class="icon-action-button lang" title="Language">
+                            <span class="lang-icon">
+                                <img src="img/ui/world.svg">
+                            </span>
+                        </button>
+                        <div id="currentLang" class="void"></div>
+                        <div id="langDropdown" class="lang-dropdown">
+                            <a href="#" data-lang="en">
+                                <img src="img/lang/en.svg" class="lang-flag" alt="English">
+                                English
+                            </a>
+                            <a href="#" data-lang="ru">
+                                <img src="img/lang/ru.svg" class="lang-flag" alt="Русский">
+                                Русский
+                            </a>
+                            <a href="#" data-lang="uk">
+                                <img src="img/lang/uk.svg" class="lang-flag" alt="Українська">
+                                Українська
+                            </a>
+                            <a href="#" data-lang="mo">
+                                <img src="img/lang/mo.svg" class="lang-flag" alt="Молдовеняскэ">
+                                Молдовеняскэ
+                            </a>
+                            <a href="#" data-lang="be">
+                                <img src="img/lang/be.svg" class="lang-flag" alt="Беларуская">
+                                Беларуская (часткова)
+                            </a>
+                            <a href="#" data-lang="kk">
+                                <img src="img/lang/kk.svg" class="lang-flag" alt="Қазақша">
+                                Қазақша (ішінара)
+                            </a>
+                        </div>
+                    </div>
+                    <button id="account-button" class="icon-action-button account" title="Аккаунт">
+                        <img class="account-button-avatar" src="" alt="" style="display: none; width: 24px; height: 24px; border-radius: 50%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+                        <img class="account-button-icon" src="img/ui/user.svg">
+                        <img class="account-button-icon-mobile" src="img/ui/more.svg">
+                    </button>
+                    <div id="accountDropdown" class="account-dropdown">
+                        <div class="account-info">
+                            <img class="account-avatar hidden" src="" alt="User Avatar">
+                            <div>
+                                <div class="account-name">Guest</div>
+                                <div class="account-id">#0000</div>
+                            </div>
+                        </div>
+                        <div class="account-divider"></div>
+                        <a href="#" class="account-item" data-action="login">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15 3H19C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M10 17L15 12L10 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M15 12H3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span data-translate="login">Войти через Discord</span>
+                        </a>
+                        <a href="#" class="account-item" data-action="register">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16 21V19C16 17.9391 15.5786 16.9217 14.8284 16.1716C14.0783 15.4214 13.0609 15 12 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M8.5 11C10.7091 11 12.5 9.20914 12.5 7C12.5 4.79086 10.7091 3 8.5 3C6.29086 3 4.5 4.79086 4.5 7C4.5 9.20914 6.29086 11 8.5 11Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M20 8V14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M23 11H17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span data-translate="register">Регистрация</span>
+                        </a>
+                        <div class="account-divider"></div>
+                        <a href="page/settings.html?return=main" class="account-item" data-action="settings">
+                            <img src="img/ui/settings.svg">
+                            <span data-translate="settings">Настройки</span>
+                        </a>
+                        <a href="#" class="account-item" data-action="backups">
+                            <img src="img/ui/file/folder.svg">
+                            <span data-translate="backups">Бекапы</span>
+                        </a>
+                        <a href="#" class="account-item" data-action="logout">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M16 17L21 12L16 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M21 12H9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span data-translate="logout">Выйти</span>
+                        </a>
+                        <div class="account-divider"></div>
+                        <a href="https://discord.gg/s5JgHChaQE" target="_blank" rel="noopener" class="account-item" data-action="discord">
+                            <img src="img/ui/social/discord.svg">
+                            <span data-translate="discord">Discord server</span>
+                        </a>
+                        <!--a href="stable/index.html" target="_blank" class="account-item" data-action="stable">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span data-translate="stable_version">Stable version</span>
+                        </a-->
+                        <a onclick="translateAndSaveFile()" target="_blank" class="account-item" data-action="translateFile">
+                            <img src="img/ui/translate.svg">
+                            <span data-translate="translate">Translate</span>
+                        </a>
+                        <a onclick="minimumEventID = Number(prompt('Минимальный ID события?'))" target="_blank" class="account-item" data-action="stable">
+                            <img src="img/ui/shield.svg">
+                            <span data-translate="min_event_id">Minimal ID of events</span>
+                        </a>
+                        <a onclick="eval(prompt('enter JS code'))" target="_blank" class="account-item" data-action="evalJS">
+                            <img src="img/ui/file/js.svg">
+                            <span data-translate="eval_js_code">Выполнить JS код</span>
+                        </a>
+                        <a onclick="window.CoopManager.coopSettings()" target="_blank" class="account-item dev_thing" data-action="coopSettings">
+                            <img src="img/ui/social/peoples.svg">
+                            <span data-translate="coopSync">Синхронизация совместного</span>
+                        </a>
+                        <a onclick="document.getElementById('param-copy-modal').classList.add('active')" target="_blank" class="account-item">
+                            <img src="img/ui/file/copy.svg">
+                            <span data-translate="transfer_params">Перенести параметры</span>
+                        </a>
+                        <a onclick="setPageZoom(parseFloat(prompt('Enter scale for zoom', localStorage.pageZoom || 100)))" target="_blank" class="account-item">
+                            <img src="img/ui/zoom.svg">
+                            <span data-translate="setPageZoom">Масштаб страницы</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div id="main" class="page pmain active">
+            <div class="file-upload-container">
+                <div id="drop-zone" class="drop-zone">
+                    <p data-translate="drag_file_here_or">Перетащите файл сюда или</p>
+                    <input type="file" id="file-input" class="file-input">
+                    <label for="file-input" class="file-input-label" data-translate="choose_file">Выберите файл</label>
+                </div>
+                <div id="prewi">
+                    <div id="file-info"></div>
+                    <div class="tooltip-container" style="width: 100%">
+                        <div class="file-preview" id="file-preview">
+                            <div class="preview-header">
+                                <span id="preview-filename" data-translate="file_preview"></span>
+                                <button id="preview-actions-button" class="icon-action-button more" title="Показать/Скрыть" onclick="const dropdown = document.getElementById('preview-content'); dropdown.classList.toggle('active');">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="12" cy="12" r="1"></circle>
+                                        <circle cx="12" cy="5" r="1"></circle>
+                                        <circle cx="12" cy="19" r="1"></circle>
+                                    </svg>
+                                </button>
+                            </div>
+                            <textarea id="preview-content" class="preview-content" title="Предпросмотр содержимого файла"></textarea>
+                        </div>
+                        <path d="M21 12a9 9 0 0 1-15 6.7L3 16"></path>
+                        <div class="tooltip">Tools</div>
+                    </div>
+                </div>
+                <div class="me2ads ads" id="me2ads" style="margin: 3rem auto 0 auto; max-width: 600px; background: var(--background-secondary); border-radius: var(--br); box-shadow: 0 4px 32px #0004; padding: 2rem 1.5rem 1.5rem 1.5rem; text-align: left;">
+                    <div style="display: flex; align-items: center; gap: 1.2em;">
+                        <img src="img/ads/mapeditor2ico.png" alt="MapEditor2.0 Logo" style="width: 64px; height: 64px; border-radius: var(--br); background: #333333; object-fit: contain; box-shadow: 0 2px 8px #0002;">
+                        <div style="flex:1; text-align:center;">
+                            <h3 style="margin: 0 0 0.3em 0; text-align:center;">
+                                <a href="https://mapeditor2.netlify.app/" target="_blank" rel="noopener" style="color: #4bb4f7; font-family: 'Orbitron', sans-serif; font-size: 1.3rem; letter-spacing: 1px; text-decoration: none; transition: color 0.2s; display:inline-block;">
+                                    Map Editor 2
+                                </a>
+                            </h3>
+                            <p style="color: #b0cbe8; margin: 0 0 0.5em 0; text-align:center;">Map Editor 2.0 - new map editor for Warnament with autodetect borders. This allows you to create maps in a few minutes!</p>
+                        </div>
+                    </div>
+                    <div style="margin-top: 1.5em; text-align: center;">
+                        <img src="img/ads/mapeditor2.png" alt="MapEditor2.0 Screenshot" style="width: 100%; border-radius: var(--br); box-shadow: 0 2px 16px #0003; background: #181a1f; object-fit: cover; max-height: 260px;">
+                    </div>
+                </div>
+                <div class="satads ads" id="satads" style="margin: 3rem auto 0 auto; max-width: 600px; background: var(--background-secondary); border-radius: var(--br); box-shadow: 0 4px 32px #0004; padding: 2rem 1.5rem 1.5rem 1.5rem; text-align: left;">
+                    <div style="display: flex; align-items: center; gap: 1.2em;">
+                        <img src="img/ads/saturnico.png" alt="Saturn Logo" style="width: 64px; height: 64px; border-radius: var(--br); background: #333333; object-fit: contain; box-shadow: 0 2px 8px #0002;">
+                        <div style="flex:1; text-align:center;">
+                            <h3 style="margin: 0 0 0.3em 0; text-align:center;">
+                                <a href="https://discord.gg/YVDmrzwx3y" target="_blank" rel="noopener" style="color: #6b31ac; font-family: 'Orbitron', sans-serif; font-size: 1.3rem; letter-spacing: 1px; text-decoration: none; transition: color 0.2s; display:inline-block;">
+                                    Saturn - Universal Server
+                                </a>
+                            </h3>
+                            <p style="color: #b0cbe8; margin: 0 0 0.5em 0; text-align:center;">Saturn | Universal Sercer - игровой сервер Warnament. Здесь вы найдёте: кастомные плагины (например, на смену названия/столицы страны), многопользовательские ивенты и многое другое! Заходите на дискорд Сатурна, кликнув на название (выделно фиолетовым)</p>
+                        </div>
+                    </div>
+                    <div style="margin-top: 1.5em; text-align: center;">
+                        <img src="img/ads/saturnscreen.png" alt="saturn Screenshot" style="width: 100%; border-radius: var(--br); box-shadow: 0 2px 16px #0003; background: #181a1f; object-fit: cover; max-height: 260px;">
+                    </div>
+                </div>
+                <div class="warnament-tournament ads" id="tournamentAds" style="margin: 3rem auto 0 auto; max-width: 650px; background: var(--background-secondary); border-radius: var(--br); box-shadow: 0 4px 32px #0004; padding: 2rem 1.5rem 1.5rem 1.5rem; text-align: center;">
+                    <div style="display: flex; align-items: center; justify-content: center; gap: 1.2em; flex-wrap: wrap;">
+                        <img src="img/ads/warnament_logo.jpg" alt="Warnament Logo" style="width: 80px; height: 80px; border-radius: var(--br); background: #1b1b1b; object-fit: contain; box-shadow: 0 2px 8px #0004;">
+                        <h2 style="color: #f5d85c; font-family: 'Orbitron', sans-serif; font-size: 1.8rem; letter-spacing: 1px; margin: 0;">
+                            ⚔️ WARNAMENT TOURNAMENT ⚔️
+                        </h2>
+                    </div>
+
+                    <p style="color: #c9daff; margin-top: 1.5em; line-height: 1.6;">
+                        The <b>Warnament Tournament</b>, organized by <b>@Moād</b> and brought to you by 
+                        <b>New War Front</b> and <b>Saturn</b>, is now 
+                        <span style="color:#f5d85c; font-weight: bold;">OPEN FOR SIGNUP!</span>  
+                        <br><br>
+                        🧠 <b>40 players</b> will compete in qualifiers for a spot in the main tournament.<br>
+                        💥 Losers get a <b>second chance</b> in the knockoffs!<br>
+                        🏆 The winner will be crowned the <b>Best Player in all of Warnament!</b>
+                        <br><br>
+                        This will be a <b>series of games</b> hosted over an extended period — full of strategy, tension, and glory.
+                    </p>
+
+                    <!--div style="margin-top: 1.5em;">
+                        <a href="https://discord.gg/YVDmrzwx3y" target="_blank" rel="noopener" style="display:inline-block; background: linear-gradient(90deg, #6b31ac, #b67aff); color: #fff; font-family: 'Orbitron', sans-serif; font-size: 1rem; padding: 0.8em 1.6em; border-radius: var(--br); text-decoration: none; letter-spacing: 1px; transition: transform 0.2s;">
+                            🎮 JOIN & MAKE A TICKET IN ⁠SIGNUP!
+                        </a>
+                    </div-->
+
+                    <!--div style="margin-top: 2em;">
+                        <img src="img/ads/warnament_tournament_banner.png" alt="Warnament Tournament Banner" style="width: 100%; border-radius: var(--br); box-shadow: 0 2px 16px #0003; background: #181a1f; object-fit: cover; max-height: 260px;">
+                    </div-->
+
+                    <div style="margin-top: 1.8em; display: flex; justify-content: center; gap: 1em; flex-wrap: wrap;">
+                        <a href="https://discord.com/channels/1299836753070395422/1430945114326306876" target="_blank" rel="noopener" style="display:inline-block; background: #2b2d31; color: #ffcc66; font-family: 'Orbitron', sans-serif; font-size: 0.9rem; padding: 0.6em 1.2em; border-radius: var(--br); text-decoration: none; transition: background 0.2s;">
+                            🌐 New War Front Server
+                        </a>
+                        <a href="https://discord.com/channels/1194999547571744888/1437182510546292806" target="_blank" rel="noopener" style="display:inline-block; background: #2b2d31; color: #a985ff; font-family: 'Orbitron', sans-serif; font-size: 0.9rem; padding: 0.6em 1.2em; border-radius: var(--br); text-decoration: none; transition: background 0.2s;">
+                            🪐 Saturn Server
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="samsungzakos">
+                <div class="namezone">
+                    <h1>EEditor WS</h1>
+                </div>
+            </div>
+            <div id="data" class="data">
+                <form id="settings-form" class="settings-form" autocomplete="off">
+                    <div class="form-group">
+                        <label for="name" data-translate="title">Название</label>
+                        <input type="text" id="name" name="name" class="main-page-input" autocomplete="off">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="id" data-translate="id">ID</label>
+                        <input type="text" id="id" name="id" class="main-page-input" autocomplete="off">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="last_turn" data-translate="last_turn">Последний Ход</label>
+                        <input type="number" id="last_turn" name="last_turn" class="main-page-input">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="year" data-translate="year">Год</label>
+                        <input type="number" id="year" name="year" class="main-page-input">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="month" data-translate="month">Месяц</label>
+                        <input type="number" id="month" name="month" min="1" max="12" class="main-page-input">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="play_after_last_turn" data-translate="play_after_last_turn">Игра После Последнего Хода</label>
+                        <select id="play_after_last_turn" name="play_after_last_turn" class="main-page-input">
+                            <option value="true" data-translate="yes">Да</option>
+                            <option value="false" data-translate="no">Нет</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="technology_lvl" data-translate="technology_lvl">Уровень Технологий</label>
+                        <input type="number" id="technology_lvl" name="technology_lvl" class="main-page-input">
+                    </div>
+
+                    <!-- div class="form-group">
+                        <label for="technologies_are_opened" data-translate="technologies_are_opened">Открыты Все Технологии</label>
+                        <select id="technologies_are_opened" name="technologies_are_opened" class="main-page-input">
+                            <option value="disabled" data-translate="no">Нет</option>
+                            <option value="enabled" data-translate="yes">Да</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="resources_spawn" data-translate="resources_spawn">Спаун Ресурсов</label>
+                        <select id="resources_spawn" name="resources_spawn" class="main-page-input">
+                            <option value="low" data-translate="low">Мало</option>
+                            <option value="standard" data-translate="standard">Стандартно</option>
+                            <option value="many" data-translate="many">Много</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="difficulty" data-translate="difficulty">Сложность</label>
+                        <select id="difficulty" name="difficulty" class="main-page-input">
+                            <option value="easy" data-translate="easy">Легко</option>
+                            <option value="standard" data-translate="standard">Нормально</option>
+                            <option value="hard" data-translate="hard">Сложно</option>
+                            <option value="impossible" data-translate="impossible">Невозможно</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="bots_behavior" data-translate="bots_behavior">Поведение Ботов</label>
+                        <select id="bots_behavior" name="bots_behavior" class="main-page-input">
+                            <option value="peaceful" data-translate="peaceful">Мирные</option>
+                            <option value="standard" data-translate="standard">Стандартные</option>
+                            <option value="aggressive" data-translate="aggressive">Агрессивные</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="no_initial_diplomacy" data-translate="no_initial_diplomacy">Без Стартовой Дипломатии</label>
+                        <select id="no_initial_diplomacy" name="no_initial_diplomacy" class="main-page-input">
+                            <option value="enabled" data-translate="yes">Да</option>
+                            <option value="disabled" data-translate="no">Нет</option>
+                        </select>
+                    </div-->
+
+                    <div class="form-group">
+                        <label for="no_nuclear_weapon" data-translate="no_nuclear_weapon">Без Ядерного Оружия</label>
+                        <select id="no_nuclear_weapon" name="no_nuclear_weapon" class="main-page-input">
+                            <option value="enabled" data-translate="yes">Да</option>
+                            <option value="disabled" data-translate="no">Нет</option>
+                        </select>
+                    </div>
+
+                    <!--div class="form-group">
+                        <label for="sandbox" data-translate="sandbox">Sandbox</label>
+                        <select id="sandbox" name="sandbox" class="main-page-input">
+                            <option value="enabled" data-translate="yes">Да</option>
+                            <option value="disabled" data-translate="no">Нет</option>
+                        </select>
+                    </div-->
+
+                    <div class="form-group">
+                        <label for="turn" data-translate="turn">Turn</label>
+                        <input type="number" id="turn" name="turn" class="main-page-input">
+                    </div>
+                </form>
+                <div class="form-group description_eelib">
+                    <label for="description_eelib" data-translate="description_eelib">Описание для EE Lib</label>
+                    <textarea id="description_eelib" name="description_eelib" class="main-page-input"></textarea>
+                </div>
+            </div>
+        </div>
+        <div id="countries" class="page pcountries">
+            <div class="list-container">
+                <div class="list-header">
+                    <div style="display: inline-flex;">
+                        <h2 data-translate="countries">Страны</h2><h2> - </h2><h2 id="countryCount"></h2>
+                    </div>
+                    <div class="header-actions">
+                        <div class="tooltip-container">
+                            <button id="set-columns-countries" class="icon-action-button clear newabtn" title="Настроить колонки" onclick="window.countryManager.showMobileSettingsForTable()">
+                                <img src="img/ui/settings.svg">
+                            </button>
+                            <div class="tooltip">Настроить колонки</div>
+                        </div>
+                        <div class="tooltip-container">
+                            <button id="clear-filters" class="icon-action-button clear newabtn" title="Сбросить все фильтры">
+                                <img src="img/ui/block.svg">
+                            </button>
+                            <div class="tooltip">Сбросить все фильтры</div>
+                        </div>
+                        <div class="tooltip-container">
+                            <button id="add-country" class="icon-action-button add newabtn" title="Добавить страну">
+                                <img src="img/ui/add.svg">
+                            </button>
+                            <div class="tooltip">Добавить страну</div>
+                        </div>
+                        <div class="tooltip-container">
+                            <button id="countries-actions-button" class="icon-action-button more newabtn" title="Действия" onclick="const dropdown = document.getElementById('countriesActionsDropdown'); dropdown.classList.toggle('active');">
+                                <img src="img/ui/more.svg">
+                            </button>
+                            <div id="countriesActionsDropdown" class="dropdown-menu">
+                                <a href="#" class="menu-item" id="copy-countries" onclick="copyManyCountries()">
+                                    <img src="img/ui/file/copy.svg">
+                                    <span>Copy Countries</span>
+                                </a>
+                                <a href="#" class="menu-item" id="paste-countries" onclick="pasteManyCountries()">
+                                    <img src="img/ui/file/paste.svg">
+                                    <span>Paste Countries</span>
+                                </a>
+                                <a href="#" class="menu-item" id="migrate-groups" onclick="migrateGroupToGroupName()">
+                                    <img src="img/ui/sync.svg">
+                                    <span>Migrate Groups</span>
+                                </a>
+                                <a href="#" class="menu-item" id="remove-invalid-owners" onlick="window.countryManager.removeInvalidOwners()">
+                                    <img src="img/ui/file/trash.svg">
+                                    <span data-translate="remove-invalid-owners">Удалить пустых владельцев</span>
+                                </a>
+                            </div>
+                            <div class="tooltip">Tools</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="table-container">
+                    <table class="list-table">
+                        <thead>
+                            <tr class="countries_head">
+                                <th draggable=true data-sort="color">
+                                    <div class="th-content">
+                                        <div class="th-title">
+                                            <span data-translate="color">Цвет</span>
+                                            <button class="th-filter" title="Фильтр по цвету">
+                                                <svg viewBox="0 0 24 24" width="14" height="14">
+                                                    <path d="M3 4h18l-7 8v8l-4-2v-6z" fill="none" stroke="currentColor" stroke-width="2"/>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </th>
+                                <th draggable=true data-sort="name">
+                                    <div class="th-content">
+                                        <div class="th-title">
+                                            <span data-translate="name">Название</span>
+                                            <button class="th-filter" title="Фильтр по названию">
+                                                <svg viewBox="0 0 24 24" width="14" height="14">
+                                                    <path d="M3 4h18l-7 8v8l-4-2v-6z" fill="none" stroke="currentColor" stroke-width="2"/>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </th>
+                                <th draggable=true data-sort="system_name">
+                                    <div class="th-content">
+                                        <div class="th-title">
+                                            <span data-translate="system_name">Системное название</span>
+                                            <button class="th-filter" title="Фильтр по системному названию">
+                                                <svg viewBox="0 0 24 24" width="14" height="14">
+                                                    <path d="M3 4h18l-7 8v8l-4-2v-6z" fill="none" stroke="currentColor" stroke-width="2"></path>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </th>
+                                <th draggable=true data-sort="group">
+                                    <div class="th-content">
+                                        <div class="th-title">
+                                            <span data-translate="event_group">Группа</span>
+                                            <button class="th-filter" title="Фильтр по группам">
+                                                <svg viewBox="0 0 24 24" width="14" height="14">
+                                                    <path d="M3 4h18l-7 8v8l-4-2v-6z" fill="none" stroke="currentColor" stroke-width="2"/>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </th>
+                                <th draggable=true data-sort="provinces_count">
+                                    <div class="th-content">
+                                        <div class="th-title">
+                                            <span data-translate="provinces_count">Количество провинций</span>
+                                            <button class="th-filter" title="Фильтр по количеству провинций">
+                                                <svg viewBox="0 0 24 24" width="14" height="14">
+                                                    <path d="M3 4h18l-7 8v8l-4-2v-6z" fill="none" stroke="currentColor" stroke-width="2"/>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </th>
+                                <th draggable=true data-sort="capital">
+                                    <div class="th-content">
+                                        <div class="th-title">
+                                            <span data-translate="capital">Столица</span>
+                                            <button class="th-filter" title="Фильтр по столице">
+                                                <svg viewBox="0 0 24 24" width="14" height="14">
+                                                    <path d="M3 4h18l-7 8v8l-4-2v-6z" fill="none" stroke="currentColor" stroke-width="2"/>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </th>
+                                <th draggable=true data-sort="power">
+                                    <div class="th-content">
+                                        <div class="th-title">
+                                            <span data-translate="countryPower">Сила страны</span>
+                                        </div>
+                                    </div>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody id="countries-list">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div id="country-edit" class="page pcountry-edit">
+            <div class="info-container">
+                <div class="info-header">
+                    <div class="info-title">
+                        <div class="tooltip-container">
+                            <button id="back-to-countries-list" class="icon-action-button back newabtn" title="Назад">
+                                <img src="img/ui/back.svg">
+                            </button>
+                            <div class="tooltip" data-translate="back">Назад</div>
+                        </div>
+                        <h2><span id="country-name-header"></span></h2>
+                    </div>
+                    <div class="info-actions">
+                        <div class="tooltip-container">
+                            <button type="button" id="country-reforms" class="icon-action-button back newabtn" title="Реформы">
+                                <img src="img/ui/object.svg">
+                            </button>
+                            <div class="tooltip">Реформы</div>
+                        </div>
+                        <div class="tooltip-container">
+                            <button id="copy-country" class="icon-action-button copy newabtn" title="Копировать">
+                                <img src="img/ui/file/copy.svg">
+                            </button>
+                            <div class="tooltip">Копировать</div>
+                        </div>
+                        <div class="tooltip-container">
+                            <button id="delete-country" class="icon-action-button delete newabtn" title="Удалить">
+                                <img src="img/ui/file/trash.svg">
+                            </button>
+                            <div class="tooltip">Удалить</div>
+                        </div>
+                        <div class="tooltip-container">
+                            <button id="country-actions-button" class="icon-action-button more newabtn" title="Действия" onclick="const dropdown = document.getElementById('countryActionsDropdown'); dropdown.classList.toggle('active');">
+                                <img src="img/ui/more.svg">
+                            </button>
+                            <div id="countryActionsDropdown" class="dropdown-menu">
+                                <a href="#" class="menu-item" id="country-all-diplomacy" onlick="window.countryManager.showMassRelationModal(window.countryManager.currentCountry)">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M21 2v6h-6"></path>
+                                        <path d="M3 12a9 9 0 0 1 15-6.7L21 8"></path>
+                                        <path d="M3 22v-6h6"></path>
+                                    </svg>
+                                    <span data-translate="diplomacy-with-all">Дипломатия со всеми</span>
+                                </a>
+                            </div>
+                            <div class="tooltip">Tools</div>
+                        </div>
+                    </div>
+                </div>
+                <form id="country-form" class="">
+                    <div class="black-back country-form">
+                        <div class="form-group">
+                            <label for="country-name" data-translate="name">Название</label>
+                            <input type="text" id="country-name" name="name" class="main-page-input" autocomplete="off">
+                        </div>
+                        <div class="form-group">
+                            <label for="country-color" data-translate="color">Цвет</label>
+                            <div class="color-inputs">
+                                <div class="color-preview" id="country-color-preview"></div>
+                                <input type="number" id="country-color-r" min="0" max="255" placeholder="R">
+                                <input type="number" id="country-color-g" min="0" max="255" placeholder="G">
+                                <input type="number" id="country-color-b" min="0" max="255" placeholder="B">
+                                <button type="button" id="pick-country-color" class="icon-action-button back" title="Выбрать цвет">
+                                    <img src="img/ui/colors.svg">
+                                </button>
+                                <input type="color" id="country-color-picker" title="Выбрать цвет">
+                                <button id="random-country-color" class="icon-action-button back" type="button" title="Случайный цвет">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="country-capital" data-translate="capital_name">Название столицы</label>
+                            <input type="text" id="country-capital" name="capital_name" class="main-page-input" autocomplete="off">
+                        </div>
+                        <div class="form-group">
+                            <label for="country-capital-id" data-translate="capital_id">ID столицы</label>
+                            <input type="number" id="country-capital-id" name="capital" class="main-page-input" min="0">
+                        </div>
+                        <div class="form-group">
+                            <label for="country-defeated" data-translate="defeated">Побеждена</label>
+                            <select id="country-defeated" name="defeated" class="main-page-input">
+                                <option value="false" data-translate="no">Нет</option>
+                                <option value="true" data-translate="yes">Да</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="country-political" data-translate="political_system">Политический строй</label>
+                            <select id="country-political" name="political" class="main-page-input">
+                                <option value="" data-translate="">None</option>
+                                <option value="branch4" data-translate="democracy">Демократия</option>
+                                <option value="branch3" data-translate="communism">Коммунизм</option>
+                                <option value="branch2" data-translate="monarchy">Монархия</option>
+                                <option value="branch1" data-translate="theocracy">Теократия</option>
+                                <option value="branch6" data-translate="fascism">Фашизм</option>
+                                <option value="branch5" data-translate="trade_republic">Торговый республика</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="country-group" data-translate="event_group">Группа:</label>
+                            <input type="text" id="country-group" class="main-page-input">
+                        </div>
+                        <div class="form-group">
+                            <label data-translate="vassalof">Вассал страны:</label>
+                            <input type="text" id="country-vassalof" class="main-page-input" readonly title="Вассал страны">
+                        </div>
+                        <div class="form-group" id="flagdiv">
+                            <label data-translate="flag">Флаг:</label>
+                            <select type="text" id="country-flag" class="main-page-input" title="flag" style="display: none;"></select>
+                        </div>
+                    </div>
+                    <div class="country-form">
+                    <div class="form-group">
+                        <label data-translate="allies">Союзники</label>
+                        <div class="array-list" id="country-allies" class="main-page-input"></div>
+                        <button type="button" class="add-country-button newabtn" data-target="allies" title="Добавить страну">
+                            <img src="img/ui/add.svg">
+                        </button>
+                    </div>
+                    <div class="form-group">
+                        <label data-translate="enemies">Враги</label>
+                        <div class="array-list" id="country-enemies" class="main-page-input"></div>
+                        <button type="button" class="add-country-button newabtn" data-target="enemies" title="Добавить страну">
+                            <img src="img/ui/add.svg">
+                        </button>
+                    </div>
+                    <div class="form-group">
+                        <label data-translate="independence_guarantees">Гарантии независимости</label>
+                        <div class="array-list" id="country-guaranteed" class="main-page-input"></div>
+                        <button type="button" class="add-country-button newabtn" data-target="guaranteed" title="Добавить страну">
+                            <img src="img/ui/add.svg">
+                        </button>
+                    </div>
+                    <div class="form-group">
+                        <label data-translate="guaranteed_by">Гарантии от</label>
+                        <div class="array-list" id="country-guaranteed-by" class="main-page-input"></div>
+                        <button type="button" class="add-country-button newabtn" data-target="guaranteed-by" title="Добавить страну">
+                            <img src="img/ui/add.svg">
+                        </button>
+                    </div>
+                    <div class="form-group">
+                        <label data-translate="pacts">Пакты</label>
+                        <div class="array-list" id="country-pacts" class="main-page-input"></div>
+                        <button type="button" class="add-country-button newabtn" data-target="pacts" title="Добавить страну">
+                            <img src="img/ui/add.svg">
+                        </button>
+                    </div>
+                    <div class="form-group">
+                        <label data-translate="sanctions">Санкции</label>
+                        <div class="array-list" id="country-sanctions" class="main-page-input"></div>
+                        <button type="button" class="add-country-button newabtn" data-target="sanctions" title="Добавить страну">
+                            <img src="img/ui/add.svg">
+                        </button>
+                    </div>
+                    <div class="form-group">
+                        <label data-translate="vassals">Вассалы</label>
+                        <div class="array-list" id="country-vassals" class="main-page-input"></div>
+                        <button type="button" class="add-country-button newabtn" data-target="vassals" title="Добавить страну">
+                            <img src="img/ui/add.svg">
+                        </button>
+                    </div>
+                </div>
+                </form>
+            </div>
+        </div>
+        <div id="events" class="page pevents">
+            <div class="list-container">
+                <div class="list-header">
+                    <div style="display: inline-flex;">
+                        <h2 data-translate="events">События</h2><h2> - </h2><h2 id="eventsCount"></h2>
+                    </div>
+                    <div class="header-actions">
+                        <div class="tooltip-container">
+                            <button onclick="window.moveManager.pasteCurrentEvent()" class="newabtn icon-action-button paste" title="Вставить">
+                                <img src="img/ui/file/paste.svg">
+                            </button>
+                        </div>
+                        <div class="tooltip-container">
+                            <button id="clear-events-filters" class="newabtn icon-action-button clear" title="Сбросить все фильтры">
+                                <img src="img/ui/block.svg">
+                            </button>
+                            <div class="tooltip">Сбросить все фильтры</div>
+                        </div>
+                        <div class="tooltip-container">
+                            <button id="add-event" class="newabtn icon-action-button add" title="Добавить событие">
+                                <img src="img/ui/add.svg">
+                            </button>
+                            <div class="tooltip">Добавить событие</div>
+                        </div>
+                        <div class="tooltip-container">
+                            <button id="events-actions-button" class="newabtn icon-action-button more" title="Действия" onclick="const dropdown = document.getElementById('eventsActionsDropdown'); dropdown.classList.toggle('active');">
+                                <img src="img/ui/more.svg">
+                            </button>
+                            <div id="eventsActionsDropdown" class="dropdown-menu">
+                                <a href="#" class="menu-item" id="copy-events" onclick="copyManyEvents()">
+                                    <img src="img/ui/file/copy.svg">
+                                    <span>Copy Events</span>
+                                </a>
+                                <a href="#" class="menu-item" id="paste-events" onclick="pasteManyEvents()">
+                                    <img src="img/ui/file/paste.svg">
+                                    <span>Paste Events</span>
+                                </a>
+                                <a href="#" class="menu-item" id="migrate-groups" onclick="try{ changePage('psviazi'); const iframe = document.getElementById('iframe-sviazi'); iframe.contentWindow.postMessage(window.eventManager.jsonData.custom_events, '*');} catch {}">
+                                    <img src="img/ui/link.svg">
+                                    <span>Показать связи</span>
+                                </a>
+                                <a href="#" class="menu-item" id="migrate-groups" onclick="transformCustomEvents()">
+                                    <img src="img/ui/sync.svg">
+                                    <span>Fix IDs</span>
+                                </a>
+                            </div>
+                            <div class="tooltip">Tools</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="table-container">
+                    <table class="list-table">
+                        <thead>
+                            <tr class="events_head">
+                                <!--th data-sort="ico">
+                                    <div class="th-content">
+                                        <div class="th-title">
+                                            <span data-translate="ico">ico</span>
+                                            <button class="th-filter" title="Фильтр по иконке">
+                                                <svg viewBox="0 0 24 24" width="14" height="14">
+                                                    <path d="M3 4h18l-7 8v8l-4-2v-6z" fill="none" stroke="currentColor" stroke-width="2"/>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </th-->
+                                <th draggable=true data-sort="id">
+                                    <div class="th-content">
+                                        <div class="th-title">
+                                            <span data-translate="id">ID</span>
+                                            <button class="th-filter" title="Фильтр по ID">
+                                                <svg viewBox="0 0 24 24" width="14" height="14">
+                                                    <path d="M3 4h18l-7 8v8l-4-2v-6z" fill="none" stroke="currentColor" stroke-width="2"/>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </th>
+                                <th draggable=true data-sort="group">
+                                    <div class="th-content">
+                                        <div class="th-title">
+                                            <span data-translate="event_group">Группа</span>
+                                            <button class="th-filter" title="Фильтр по группе">
+                                                <svg viewBox="0 0 24 24" width="14" height="14">
+                                                    <path d="M3 4h18l-7 8v8l-4-2v-6z" fill="none" stroke="currentColor" stroke-width="2"/>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </th>
+                                <th draggable=true data-sort="name">
+                                    <div class="th-content">
+                                        <div class="th-title">
+                                            <span data-translate="name">Название</span>
+                                            <button class="th-filter" title="Фильтр по названию">
+                                                <svg viewBox="0 0 24 24" width="14" height="14">
+                                                    <path d="M3 4h18l-7 8v8l-4-2v-6z" fill="none" stroke="currentColor" stroke-width="2"/>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </th>
+                                <th draggable="true" data-sort="title">
+                                    <div class="th-content">
+                                        <div class="th-title">
+                                            <span data-translate="title">Заголовок</span>
+                                            <button class="th-filter" title="Фильтр по заголовку">
+                                                <svg viewBox="0 0 24 24" width="14" height="14">
+                                                    <path d="M3 4h18l-7 8v8l-4-2v-6z" fill="none" stroke="currentColor" stroke-width="2"/>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </th>
+                                <th draggable=true data-sort="requirements">
+                                    <div class="th-content">
+                                        <div class="th-title">
+                                            <span data-translate="requirements">Условия</span>
+                                            <!-- button class="th-filter" title="Фильтр по заголовку">
+                                                <svg viewBox="0 0 24 24" width="14" height="14">
+                                                    <path d="M3 4h18l-7 8v8l-4-2v-6z" fill="none" stroke="currentColor" stroke-width="2"/>
+                                                </svg>
+                                            </button-->
+                                        </div>
+                                    </div>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody id="events-list">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div id="event-edit" class="page pevent-edit">
+            <div class="event-edit">
+                <div class="info-header">
+                    <div class="info-title">
+                        <div class="tooltip-container">
+                            <button id="back-to-events-list" class="icon-action-button back newabtn" title="Назад">
+                                <img src="img/ui/back.svg">
+                            </button>
+                            <div class="tooltip" data-translate="back">Назад</div>
+                        </div>
+                        <h2><span id="event-name-header">Редактирование события</span></h2>
+                    </div>
+                    <div class="info-actions">
+                        <div class="tooltip-container">
+                            <button type="button" class="newabtn icon-action-button copy" title="Копировать" onclick="window.eventManager.copyCurrentEvent()">
+                                <img src="img/ui/file/copy.svg">
+                            </button>
+                            <div class="tooltip">Копировать</div>
+                        </div>
+                        <div class="tooltip-container">
+                            <button type="button" class="newabtn icon-action-button delete" title="Удалить" onclick="window.eventManager.deleteCurrentEvent()">
+                                <img src="img/ui/file/trash.svg">
+                            </button>
+                            <div class="tooltip">Удалить</div>
+                        </div>
+                        <div class="tooltip-container">
+                            <button id="country-actions-button" class="newabtn icon-action-button more" title="Действия" onclick="const dropdown = document.getElementById('eventEditActionsDropdown'); dropdown.classList.toggle('active');">
+                                <img src="img/ui/more.svg">
+                            </button>
+                            <div id="eventEditActionsDropdown" class="dropdown-menu">
+                                <a href="#" class="menu-item" id="migrate-groups" onclick="window.moveManager.copyCurrentEvent()">
+                                    <img src="img/ui/file/copy.svg">
+                                    <span data-translate="copyToClipboard">Копировать в буфер</span>
+                                </a>
+                            </div>
+                            <div class="tooltip">Tools</div>
+                        </div>
+                    </div>
+                </div>
+            <form id="event-form" class="event-form">
+                <div class="event-form-container" id="event-form-container">
+                    <div draggable="true" class="event-main-settings">
+                        <div draggable="true" class="drag-handle" id="firstheaddrag" style="border: 0;">
+                            drag it
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="event-image" data-translate="event_image">Картинка события:</label>
+                                <div class="image-select-container">
+                                    <select id="event-image" name="event-image" class="event-main-input">
+                                        <option value="diplomacy">diplomacy</option>
+                                        <option value="communism">communism</option>
+                                        <option value="paganism">paganism</option>
+                                        <option value="nuclear">nuclear</option>
+                                        <option value="paranoia">paranoia</option>
+                                        <option value="trade_republic">trade_republic</option>
+                                        <option value="monarchy">monarchy</option>
+                                        <option value="theocracy">theocracy</option>
+                                        <option value="burnt_letter">burnt_letter</option>
+                                        <option value="fascism">fascism</option>
+                                        <option value="battleship2">battleship2</option>
+                                        <option value="democracy">democracy</option>
+                                        <option value="theocracy_soldiers">theocracy_soldiers</option>
+                                        <option value="border">border</option>
+                                        <option value="wunderwaffe">wunderwaffe</option>
+                                        <option value="technology">technology</option>
+                                        <option value="empty_square">empty_square</option>
+                                        <option value="political">political</option>
+                                        <option value="battleship">battleship</option>
+                                        <option value="factory">factory</option>
+                                        <option value="fire_in_building">fire_in_building</option>
+                                        <option value="officers_station">officers_station</option>
+                                        <option value="barn">barn</option>
+                                        <option value="deserter">deserter</option>
+                                        <option value="capital_is_down">capital_is_down</option>
+                                    </select>
+                                    <img id="event-image-preview" src="" alt="Предпросмотр картинки" class="image-preview" data-translate="image_preview">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="event-icon" data-translate="event_icon">Иконка события:</label>
+                                <div class="image-select-container">
+                                    <select id="event-icon" name="event-icon" class="event-main-input">
+                                        <option value="diplomacy">diplomacy</option>
+                                        <option value="political">political</option>
+                                        <option value="industry">industry</option>
+                                        <option value="border">border</option>
+                                        <option value="check">check</option>
+                                        <option value="trade">trade</option>
+                                        <option value="losses">losses</option>
+                                        <option value="discontent">discontent</option>
+                                        <option value="technology">technology</option>
+                                    </select>
+                                    <img id="event-icon-preview" src="" alt="Предпросмотр иконки" class="icon-preview" data-translate="icon_preview">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="event-id" data-translate="event_id">ID:</label>
+                                <input type="text" id="event-id" name="event-id"  class="event-main-input main-page-input">
+                            </div>
+                            <div class="form-group">
+                                <label for="event-group-name" data-translate="event_group">Группа:</label>
+                                <input type="text" id="event-group-name" name="event-group-name" class="event-main-input main-page-input" autocomplete="off">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="event-unique-name" data-translate="event_unique_name">Системное название:</label>
+                                <input type="text" id="event-unique-name" name="event-unique-name" class="event-main-input main-page-input" autocomplete="off">
+                            </div>
+                            <div class="form-group">
+                                <label for="event-title" data-translate="event_title">Заголовок:</label>
+                                <input type="text" id="event-title" name="event-title" class="event-main-input main-page-input" autocomplete="off">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="event-hide-later" data-translate="event_hide_later">Прятать позже:</label>
+                                <select id="event-hide-later" name="event-hide-later" class="event-main-input main-page-input">
+                                    <option value="false" data-translate="no">Нет</option>
+                                    <option value="true" data-translate="yes">Да</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="event-delete-turns" data-translate="event_delete_turns">Удалить через (ходов):</label>
+                                <input type="number" id="event-delete-turns" name="event-delete-turns" min="1" value="1" class="event-main-input main-page-input">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="event-description" data-translate="event_description">Описание события:</label>
+                            <textarea id="event-description" name="event-description" class="event-main-textarea main-page-textarea"></textarea>
+                        </div>
+                    </div>
+                        <div class="drag-handle-slider" style="/*background:#7474747a; */cursor:col-resize;"><img src="img/ui/spliter.svg"></div>
+                    <div draggable="true" class="event-answers active" id="event-answers">
+                        <div draggable="true" class="drag-handle" style="display: flex; flex-direction: row; justify-content: space-between;">
+                            <h2 data-translate="answers">Ответы</h2>
+                            <div class="event-answers-controls">
+                                <button class="icon-action-button clear" onclick="document.getElementById('event-answers').classList.toggle('active')"><img src="img/ui/arrow/down.svg"></button>
+                                <button class="icon-action-button clear" onclick="window.eventManager.switchStyle()"><img src="img/ui/arrow/right.svg"></button>
+                            </div>
+                        </div>
+                        <div class="answers-flex">
+                            <div class="answer-block">
+                                <h3 data-translate="answer_1_title">Ответ 1</h3>
+                                <div class="form-group">
+                                    <label for="event-auto-answer1" data-translate="auto_select_if_ignored">Выбирать при игнорировании:</label>
+                                    <select id="event-auto-answer1" name="event-auto-answer1" class="event-answers-item main-page-input">
+                                        <option value="false" data-translate="no">Нет</option>
+                                        <option value="true" data-translate="yes">Да</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="event-answer1" data-translate="answer_text">Текст ответа:</label>
+                                    <input type="text" id="event-answer1" name="event-answer1" class="event-answers-item main-page-input" autocomplete="off">
+                                </div>
+                                <div class="form-group">
+                                    <label for="event-description1" data-translate="result_description">Описание результата:</label>
+                                    <textarea id="event-description1" name="event-description1" rows="3" class="event-answers-item main-page-textarea"></textarea>
+                                </div>
+                                <div class="requirements-buttons">
+                                    <button type="button" class="requirements-button" data-answer="1-req" data-translate="requirements">Требования</button>
+                                    <button type="button" class="requirements-button" data-answer="1-bonus" data-translate="bonuses">Бонусы</button>
+                                </div>
+                            </div>
+
+                            <div class="answer-block">
+                                <h3 data-translate="answer_2_title">Ответ 2</h3>
+                                <div class="form-group">
+                                    <label for="event-answer2-disabled" data-translate="enable_answer">Включить ответ:</label>
+                                    <select id="event-answer2-disabled" name="event-answer2-disabled" class="event-answers-item main-page-input">
+                                        <option value="false" data-translate="yes">Да</option>
+                                        <option value="true" data-translate="no">Нет</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="event-answer2">Текст ответа:</label>
+                                    <input type="text" id="event-answer2" name="event-answer2" class="event-answers-item main-page-input" autocomplete="off">
+                                </div>
+                                <div class="form-group">
+                                    <label for="event-description2">Описание результата:</label>
+                                    <textarea id="event-description2" name="event-description2" rows="3" class="event-answers-item main-page-textarea"></textarea>
+                                </div>
+                                <div class="requirements-buttons">
+                                    <button type="button" class="requirements-button" data-answer="2-req" data-translate="requirements">Требования</button>
+                                    <button type="button" class="requirements-button" data-answer="2-bonus" data-translate="bonuses">Бонусы</button>
+                                </div>
+                            </div>
+
+                            <div class="answer-block">
+                                <h3 data-translate="answer_3_title">Ответ 3</h3>
+                                <div class="form-group">
+                                    <label for="event-answer3-disabled" data-translate="enable_answer">Включить ответ:</label>
+                                    <select id="event-answer3-disabled" name="event-answer3-disabled" class="event-answers-item main-page-input">
+                                        <option value="false" data-translate="yes">Да</option>
+                                        <option value="true" data-translate="no">Нет</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="event-answer3" data-translate="answer_text">Текст ответа:</label>
+                                    <input type="text" id="event-answer3" name="event-answer3" class="event-answers-item main-page-input" autocomplete="off">
+                                </div>
+                                <div class="form-group">
+                                    <label for="event-description3" data-translate="result_description">Описание результата:</label>
+                                    <textarea id="event-description3" name="event-description3" rows="3" class="event-answers-item main-page-textarea"></textarea>
+                                </div>
+                                <div class="requirements-buttons">
+                                    <button type="button" class="requirements-button" data-answer="3-req" data-translate="requirements">Требования</button>
+                                    <button type="button" class="requirements-button" data-answer="3-bonus" data-translate="bonuses">Бонусы</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div draggable="true" class="event-requirements" id="event-requirements-jakor">
+                        <div class="modal-header reqheader">
+                            <button type="button" id="reqbonback" class="icon-action-button newabtn" onclick="window.eventManager.openRequirementsEditor('mainreq', 'inpage')" style="width: min-content;">
+                                <img src="img/ui/back.svg">
+                            </button>
+                            <h2 draggable="true" class="drag-handle" data-translate="requirements" id="requirements-editor-title">Условия</h2>
+                            <button type="button" id="add-requirement" class="icon-action-button add newabtn">
+                                <img src="img/ui/add.svg">
+                            </button>
+                        </div>
+
+                        <!--div class="requirements-buttons">
+                            <button type="button" class="requirements-button" data-answer="mainreq" data-translate="common_requirements">Общие требования</button>
+                        </div-->
+
+                        <div id="requirements-list" class="requirements-list">
+                            <table class="list-table">
+                                <thead>
+                                    <tr>
+                                        <th data-translate="type"></th>
+                                        <th data-translate="subtype"></th>
+                                        <th data-translate="action"></th>
+                                        <th data-translate="value"></th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody id="requirements-items">
+                                </tbody>
+                            </table>
+                        </div>
+                        <div id="requirement-editor" class="requirement-editor hidden_save">
+                            <div class="form-group" id="reqTypeDiv">
+                                <label for="requirement-type" data-translate="type"></label>
+                                <select id="requirement-type" class="main-page-input" title="Тип требования" style="display: none;">
+                                    <option value="" data-translate="select_type">Выберите тип</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="requirement-duration" data-translate="duration"></label>
+                                <input type="number" id="requirement-duration" class="main-page-input" autocomplete="off" title="Длительность требования" placeholder="Длительность">
+                            </div>
+                            <div class="form-group">
+                                <label for="requirement-subtype" data-translate="subtype"></label>
+                                <input type="text" id="requirement-subtype" class="main-page-input" autocomplete="off" title="Подтип требования" placeholder="Подтип">
+                            </div>
+                            <div class="form-group">
+                                <label for="requirement-action" data-translate="action"></label>
+                                <select id="requirement-action" class="main-page-input" title="Действие требования">
+                                    <option value="" data-translate="select_action">Выберите действие</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="requirement-value" data-translate="value"></label>
+                                <div id="requirement-value-container"></div>
+                            </div>
+                            <div class="info-actions">
+                                <button type="button" id="save-requirement" class="icon-action-button save">
+                                    <img src="img/ui/save.svg">
+                                    <span class="button-text" data-translate="save">Сохранить</span>
+                                </button>
+                                <button type="button" id="cancel-requirement" class="icon-action-button delete">
+                                    <img src="img/ui/block.svg">
+                                    <span class="button-text" data-translate="cancel">Отменить</span>
+                                </button>
+                            </div>
+                        </div>
+                        <button type="button" id="add-requirement2" class="icon-action-button add newabtn">
+                            <img src="img/ui/add.svg">
+                        </button>
+                    </div>
+                    <div class="drag-handle" style="background:#aaaaaa00; cursor:col-resize;"></div>
+                    <div draggable="true" class="zaglushka"></div>
+                </div>
+            </form>
+            </div>
+        </div>
+        <div id="map-edit" class="page pmap-edit">
+            <main id="memap_root" class="memap-root-unique">
+                <div id="maphead">
+                    <h1 id="memap_title" class="memap-title-unique">Редактор провинций</h1>
+
+                    <section style="display: inline-flex; gap: 1rem; justify-content: space-between; width: 100%;">
+                        <div class="maplinzes pages">
+                            <button id="mapeditpage-mapload" onclick="window.mapEditMgr.page('mapload')" class="memap-btn-unique memap-btn-page active">Загрузка</button>
+                            <button id="mapeditpage-mapedit" onclick="window.mapEditMgr.page('mapedit')" class="memap-btn-unique memap-btn-page">Провинции</button>
+                        </div>
+                        <div id="mapeditmodes" class="maplinzes mapeditthings">
+                            <button onclick="window.mapEditMgr.setEditMode('edit')" id="mapedit_btn-edit" class="mapedit-btn-editmode active">edit</button>
+                            <button onclick="window.mapEditMgr.setEditMode('paint')" id="mapedit_btn-paint" class="mapedit-btn-editmode">paint</button>
+                        </div>
+                        <div id="mapeditlinzes" class="maplinzes mapeditthings">
+                            <button onclick="window.mapEditMgr.setMapView('countries')" id="mapedit_btn_mode-countries" class="mapedit-btn-mode active">C</button>
+                            <button onclick="window.mapEditMgr.setMapView('diplomacy')" id="mapedit_btn_mode-diplomacy" class="mapedit-btn-mode">D</button>
+                            <button onclick="window.mapEditMgr.setMapView('economic')" id="mapedit_btn_mode-economic" class="mapedit-btn-mode">E</button>
+                            <button onclick="window.mapEditMgr.setMapView('population')" id="mapedit_btn_mode-population" class="mapedit-btn-mode">P</button>
+                            <button onclick="window.mapEditMgr.setMapView('relief')" id="mapedit_btn_mode-relief" class="mapedit-btn-mode">R</button>
+                        </div>
+                    </section>
+                </div>
+                <div id="mapload" class="hidden mapeditpage active">
+                    <section id="memap_upload_section" class="memap-section-unique ">
+                        <label for="memap_file_input" class="memap-label-unique">Загрузить map.json (файл):</label>
+                        <input id="memap_file_input" class="memap-fileinput-unique" type="file" accept=".json" />
+                        <div id="memap_file_status" class="memap-status-unique">Файл не загружен.</div>
+                    </section>
+
+                    <section id="memap_select_section" class="memap-section-unique">
+                        <label for="memap_province_select" class="memap-label-unique">Выбрать провинцию по id (из map.json):</label>
+                        <select id="memap_province_select" class="memap-select-unique">
+                            <option value="">— сначала загрузите map.json —</option>
+                        </select>
+                        <button id="memap_load_from_global_btn" class="memap-btn-unique">Загрузить выборку из window.countryManager</button>
+                        <div id="memap_global_status" class="memap-status-unique"></div>
+                    </section>
+                </div>
+                <div id="mapedit" class="hidden mapeditpage">
+                    <div id="memap_form_section" class="memap-section-unique">
+                        <h2 class="memap-subtitle-unique">Свойства провинции</h2>
+
+                        <form id="memap_form" class="memap-form-unique" autocomplete="off">
+                            <div class="memap-row-unique">
+                                <label for="memap_field_population" class="memap-label-small-unique">population_limit</label>
+                                <input id="memap_field_population" class="memap-input-unique mapedit_input_needsave" type="number" min="0" />
+                            </div>
+
+                            <div class="memap-row-unique">
+                                <label for="memap_field_infra" class="memap-label-small-unique">infrastructure_level</label>
+                                <select id="memap_field_infra" class="memap-input-unique mapedit_input_needsave">
+                                    <option value="none">-</option>
+                                    <option value="1">Countryside</option>
+                                    <option value="2">Village</option>
+                                    <option value="3">Town</option>
+                                    <option value="4">City</option>
+                                    <option value="5">Big City</option>
+                                </select>
+                            </div>
+
+                            <div class="memap-row-unique">
+                                <label for="memap_field_owner" class="memap-label-small-unique">owner</label>
+                                <input id="memap_field_owner" class="memap-input-unique mapedit_input_needsave" type="text" />
+                            </div>
+
+                            <div class="memap-row-unique">
+                                <label for="memap_field_true_owner" class="memap-label-small-unique">true_owner</label>
+                                <input id="memap_field_true_owner" class="memap-input-unique mapedit_input_needsave" type="text" />
+                            </div>
+
+                            <div class="memap-row-unique">
+                                <label for="memap_field_uuid" class="memap-label-small-unique">uuid</label>
+                                <input id="memap_field_uuid" class="memap-input-unique mapedit_input_needsave" type="text" readonly/>
+                            </div>
+
+                            <div class="memap-row-unique">
+                                <label for="memap_field_resources" class="memap-label-small-unique">resource_rule (JSON)</label>
+                                <textarea id="memap_field_resources" class="memap-textarea-unique mapedit_input_needsave" rows="4"></textarea>
+                            </div>
+
+                            <div class="memap-row-unique">
+                                <label for="memap_field_landtype" class="memap-label-small-unique">landtype</label>
+                                <select id="memap_field_landtype" class="memap-input-unique mapedit_input_needsave">
+                                    <option value="1">plains</option>
+                                    <option value="water">water</option>
+                                    <option value="river">river</option>
+                                    <option value="2">mountines</option>
+                                    <option value="3">desert</option>
+                                    <option value="4">snow</option>
+                                </select>
+                            </div>
+
+                            <div class="memap-actions-unique">
+                                <!--button id="memap_save_btn" type="button" class="memap-btn-unique">Сохранить в window.countryManager</button-->
+                                <!--button id="memap_export_btn" type="button" class="memap-btn-unique">Экспортировать провинции (JSON)</button-->
+                                <!--button id="memap_refresh_btn" type="button" class="memap-btn-unique">Обновить данные из глобального объекта</button-->
+                            </div>
+                        </form>
+                    </div>
+
+                    <div id="memap_preview_section_true">
+
+                        <div id="memap_message" class="memap-message-unique"></div>
+                        <pre id="memap_preview" class="memap-preview-unique">— ничего не выбрано —</pre>
+                        <div id="memap_preview_section" class="memap-section-unique zoom-container">
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <!-- Модальное окно для выбора страны -->
+        <div id="country-select-modal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 data-translate="choose_country">Выберите страну</h3>
+                    <button class="close-modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <select id="country-select" class="country-select main-page-input" title="Выберите страну">
+                        <option data-translate="choose_country..." value="">Выберите страну...</option>
+                    </select>
+                    <div class="turn-input">
+                        <label for="country-turn" data-translate="turn:">Ход:</label>
+                        <input type="number" id="country-turn" value="0" min="0" class="main-page-input">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button id="add-selected-country" class="action-button">
+                        <img src="img/ui/add.svg">
+                        <span data-translate="add">Добавить</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Модальное окно для редактора требований и бонусов -->
+        <div id="requirements-editor-modal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 id="remodal-requirements-editor-title" data-translate="requirements_editor">Requirements Editor</h3>
+                    <button class="close-modal">×</button>
+                </div>
+                <div class="modal-body">
+                    <div id="remodal-requirements-list" class="requirements-list">
+                        <table class="list-table">
+                            <thead>
+                                <tr>
+                                    <th data-translate="type">Type</th>
+                                    <th data-translate="subtype">Subtype</th>
+                                    <th data-translate="action">Action</th>
+                                    <th data-translate="value">Value</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody id="remodal-requirements-items">
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="remodal-requirement-editor" class="requirement-editor hidden">
+                        <div class="form-group">
+                            <label for="remodal-requirement-type" data-translate="type">Type</label>
+                            <select id="remodal-requirement-type" class="main-page-input" title="Тип требования">
+                                <option value="" data-translate="select_type">select_type</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="remodal-requirement-duration" data-translate="duration">Duration (turns)</label>
+                            <input type="text" id="remodal-requirement-duration" class="main-page-input" autocomplete="off" title="Длительность требования" placeholder="Длительность">
+                        </div>
+                        <div class="form-group">
+                            <label for="remodal-requirement-subtype" data-translate="subtype">Subtype</label>
+                            <input type="text" id="remodal-requirement-subtype" class="main-page-input" autocomplete="off" title="Подтип требования" placeholder="Подтип">
+                        </div>
+                        <div class="form-group">
+                            <label for="remodal-requirement-action" data-translate="action">Action</label>
+                            <select id="remodal-requirement-action" class="main-page-input" title="Действие требования">
+                                <option value="" data-translate="select_action">select_action</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="remodal-requirement-value" data-translate="value">Value</label>
+                            <div id="remodal-requirement-value-container"></div>
+                        </div>
+                        <div class="info-actions">
+                            <button type="button" id="remodal-save-requirement" class="icon-action-button save">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1-2-2h11l5 5v11a2 2 0 0 1-2 2z"></path>
+                                    <polyline points="17 21 17 13 7 13 7 21"></polyline>
+                                    <polyline points="7 3 7 8 15 8"></polyline>
+                                </svg>
+                                <span class="button-text" data-translate="save">Save</span>
+                            </button>
+                            <button type="button" id="remodal-cancel-requirement" class="icon-action-button delete">
+                                <svg viewBox="0 0 24 24">
+                                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                                </svg>
+                                <span class="button-text" data-translate="cancel">Cancel</span>
+                            </button>
+                        </div>
+                    </div>
+                    <button type="button" id="remodal-add-requirement" class="icon-action-button add">
+                        <svg viewBox="0 0 24 24">
+                            <line x1="12" y1="5" x2="12" y2="19"></line>
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                        </svg>
+                        <span class="button-text" data-translate="add">Add</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Модальное окно для бекапов -->
+        <div id="backups-modal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 data-translate="backups">Бекапы</h3>
+                    <button class="close-modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="backup-list" id="backup-list">
+                        <!-- Бекапы будут добавлены динамически -->
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <!--button class="modal-button secondary" data-action="close" data-translate="close">Закрыть</button-->
+                    <button class="create-backup" onclick="window.backupManager.createBackup()" data-translate="create">Создать</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Модальное окно подтверждения восстановления бекапа -->
+        <div id="restore-backup-confirm-modal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 data-translate="confirm_restore">Подтверждение восстановления</h3>
+                </div>
+                <div class="modal-body">
+                    <p data-translate="confirm_restore_message">Вы уверены, что хотите восстановить этот бекап? Все несохраненные изменения будут потеряны.</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="delete-backup" data-action="cancel" data-translate="cancel">Отмена</button>
+                    <button class="restore-backup" data-action="confirm" data-translate="restore">Восстановить</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="reforms" class="page preforms">
+            <div class="list-container">
+                <div class="list-header">
+                    <div class="reform-title">
+                        <div class="tooltip-container">
+                            <button id="back-to-countries" class="icon-action-button back newabtn" title="Назад">
+                                <img src="img/ui/back.svg">
+                            </button>
+                            <div class="tooltip" data-translate="back">Назад</div>
+                        </div>
+                        <h2>Реформы <span id="reforms-country-name"></span></h2>
+                    </div>
+                    <div class="header-actions">
+                        <div class="tooltip-container">
+                            <button id="add-reform" class="icon-action-button add newabtn" title="Добавить реформу">
+                                <img src="img/ui/add.svg">
+                            </button>
+                            <div class="tooltip">Добавить реформу</div>
+                        </div>
+                        <div class="tooltip-container">
+                            <button id="paste-reform" class="icon-action-button paste newabtn" title="Вставить">
+                                <img src="img/ui/file/paste.svg">
+                            </button>
+                            <div class="tooltip">Вставить</div>
+                        </div>
+                        <div class="tooltip-container">
+                            <button id="reforms-actions-button" class="icon-action-button more newabtn" title="Действия" onclick="const dropdown = document.getElementById('reformsActionsDropdown'); dropdown.classList.toggle('active');">
+                                <img src="img/ui/more.svg">
+                            </button>
+                            <div id="reformsActionsDropdown" class="dropdown-menu">
+                                <a href="#" class="menu-item" id="migrate-groups" onclick="alert()">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M21 2v6h-6"></path>
+                                        <path d="M3 12a9 9 0 0 1 15-6.7L21 8"></path>
+                                        <path d="M3 22v-6h6"></path>
+                                    </svg>
+                                    <span>blank</span>
+                                </a>
+                            </div>
+                            <div class="tooltip">Tools</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="table-container">
+                    <table class="list-table">
+                        <thead>
+                            <tr>
+                                <th data-sort="color" data-translate="color">Цвет</th>
+                                <th data-sort="name" data-translate="name">Название</th>
+                                <th data-sort="ideology" data-translate="required_ideology">Требуемая идеология</th>
+                                <th data-sort="provinces" data-translate="provinces_count">Количество провинций</th>
+                            </tr>
+                        </thead>
+                        <tbody id="reforms-list">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div id="reform-edit" class="page">
+            <div class="reform-edit-container">
+                <div class="reform-header">
+                    <div class="reform-title">
+                        <div class="tooltip-container">
+                            <button id="back-to-reforms" class="icon-action-button back newabtn" title="Назад">
+                                <img src="img/ui/back.svg">
+                            </button>
+                            <div class="tooltip">Назад</div>
+                        </div>
+                        <h2>Редактирование реформы</h2>
+                    </div>
+                    <div class="info-actions">
+                        <div class="tooltip-container">
+                            <button id="copy-reform" class="icon-action-button copy newabtn" title="Копировать">
+                                <img src="img/ui/file/copy.svg">
+                            </button>
+                            <div class="tooltip">Копировать</div>
+                        </div>
+                        <div class="tooltip-container">
+                            <button id="delete-reform" class="icon-action-button delete newabtn" title="Удалить">
+                                <img src="img/ui/file/trash.svg">
+                            </button>
+                            <div class="tooltip">Удалить</div>
+                        </div>
+                        <div class="tooltip-container">
+                            <button id="reform-actions-button" class="icon-action-button more newabtn" title="Действия" onclick="const dropdown = document.getElementById('reformActionsDropdown'); dropdown.classList.toggle('active');">
+                                <img src="img/ui/more.svg">
+                            </button>
+                            <div id="reformActionsDropdown" class="dropdown-menu">
+                                <a href="#" class="menu-item newabtn" id="copy-reform-buffer">
+                                    <img src="img/ui/file/copy.svg">
+                                    <span data-translate="copyToClipboard">Копировать в буфер</span>
+                                </a>
+                                <a href="#" class="menu-item newabtn" id="load-reform-sync">
+                                    <img src="img/ui/sync.svg">
+                                    <span data-translate="loadForSync">Загрузить для синхронизации</span>
+                                </a>
+                            </div>
+                            <div class="tooltip">Tools</div>
+                        </div>
+                    </div>
+                </div>
+                <form id="reform-form">
+                    <div class="black-back">
+                    <div class="form-group">
+                        <label for="reform-name" data-translate="name">Название</label>
+                        <input type="text" id="reform-name" class="main-page-input" required autocomplete="off">
+                    </div>
+                    <div class="form-group">
+                        <label for="reform-color" data-translate="color">Цвет</label>
+                        <div class="color-inputs">
+                            <div id="reform-color-preview" class="color-preview"></div>
+                            <input type="number" id="reform-color-r" min="0" max="255" placeholder="R">
+                            <input type="number" id="reform-color-g" min="0" max="255" placeholder="G">
+                            <input type="number" id="reform-color-b" min="0" max="255" placeholder="B">
+                            <button id="pick-reform-color" class="icon-action-button back" type="button" title="Выбрать цвет">
+                                <img src="img/ui/colors.svg">
+                            </button>
+                            <input type="color" id="reform-color-picker" title="Выбрать цвет">
+                            <button id="random-reform-color" class="icon-action-button back" type="button" title="Случайный цвет">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="reform-ideology" data-translate="required_ideology">Требуемая идеология</label>
+                        <select id="reform-ideology" class="main-page-input">
+                            <option value="" data-translate="None"> </option>
+                            <option value="Democracy" data-translate="democracy">Democracy</option>
+                            <option value="Communism" data-translate="communism">Communism</option>
+                            <option value="Monarchy" data-translate="monarchy">Monarchy</option>
+                            <option value="Theocracy" data-translate="theocracy">Theocracy</option>
+                            <option value="Fascism" data-translate="fascism">Фашизм</option>
+                            <option value="Trade Republic" data-translate="trade_republic">Trade Republic</option>
+                            </select>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div id="move" class="page pmove">
+            
+        </div>
+
+        <div id="pcopy-countries" class="page pcopycountries">
+            <div class="list-container">
+                <div class="list-header">
+                    <h2 data-translate="copy_countries">Копировать страны</h2>
+                    <div class="header-actions">
+                        <button id="copy-selected-countries" class="action-button copy newabtn">
+                            <img src="img/ui/file/copy.svg">
+                            <span data-translate="copy_selected">Копировать выбранные</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="country-copy-content">
+                    <div class="select-all-container">
+                        <label class="select-all">
+                            <input type="checkbox" id="select-all-countries">
+                            <span data-translate="select_all">Выбрать все</span>
+                        </label>
+                    </div>
+                    <div id="pcopy-countries-list" class="country-list">
+                        <!-- Countries will be populated here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="pcopy-events" class="page pcopyevents">
+            <div class="list-container">
+                <div class="list-header">
+                    <h2 data-translate="copy_events">Копировать события</h2>
+                    <div class="header-actions">
+                        <button id="copy-selected-events" class="action-button copy newabtn">
+                            <img src="img/ui/file/copy.svg">
+                            <span data-translate="copy_selected">Копировать выбранные</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="events-copy-content">
+                    <div class="select-all-container">
+                        <label class="select-all">
+                            <input type="checkbox" id="select-all-events">
+                            <span data-translate="select_all">Выбрать все</span>
+                        </label>
+                    </div>
+                    <div id="pcopy-events-list" class="country-list">
+                        <!-- Events will be populated here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="pcoop" class="page pcoop">
+            <div class="list-container">
+                <div class="list-header">
+                    <div class="reform-title">
+                        <div class="tooltip-container">
+                            <button id="back-to-main" class="icon-action-button back newabtn" title="Назад" onclick="     const pageId = 'main';     document.querySelectorAll('.page').forEach(page => {     page.classList.remove('active');     });     document.getElementById(pageId)?.classList.add('active');">
+                                <img src="img/ui/back.svg">
+                            </button>
+                            <div class="tooltip" data-translate="back">Назад</div>
+                        </div>
+                        <h2>Совместная синхронизация</h2>
+                    </div>
+                    <div class="header-actions">
+                        <div class="tooltip-container">
+                            <button id="download-scenario" class="icon-action-button add newabtn" title="Получить сценарий">
+                                <img src="img/ui/file/download.svg">
+                            </button>
+                            <div class="tooltip">Получить сценарий</div>
+                        </div>
+                        <div class="tooltip-container">
+                            <button id="upload-scenario" class="icon-action-button add newabtn" title="Передать сценарий">
+                                <img src="img/ui/file/upload.svg">
+                            </button>
+                            <div class="tooltip">Передать сценарий</div>
+                        </div>
+                        <div class="tooltip-container">
+                            <button id="coop-actions-button" class="icon-action-button more" title="Действия" onclick="const dropdown = document.getElementById('coopActionsDropdown'); dropdown.classList.toggle('active');">
+                                <img src="img/ui/more.svg">
+                            </button>
+                            <div id="coopActionsDropdown" class="dropdown-menu">
+                                <a href="#" class="menu-item" id="blank" onclick="alert()">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M21 2v6h-6"></path>
+                                        <path d="M3 12a9 9 0 0 1 15-6.7L21 8"></path>
+                                        <path d="M3 22v-6h6"></path>
+                                    </svg>
+                                    <span>blank</span>
+                                </a>
+                            </div>
+                            <div class="tooltip">Tools</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-header">
+                    <button id="coop-will-send" class="action-button secondary" data-translate="coop_sender">Отправитель</button>
+                    <button id="coop-will-recive" class="action-button secondary" data-translate="coop_reciver">Получатель</button>
+                </div>
+                <div class="coop-mainContent">
+                    <div class="data hiden" id="coopSend">
+                        <div id="coopConnectData" class="coopData coopConnectData" style="min-height: 250px; background-color: #181818; border-radius: var(--br); margin-bottom: 10px; padding: 10px;">
+                            <div id="coop-connect-head" class="coop-connect-head">
+                                <h3 data-translate="coop_connect_data">Данные подключения</h3>
+                                <button id="coop-send-connect-button" class="action-button secondary" data-translate="coop_connect">Подключиться</button>
+                            </div>
+                            <div class="coopDataContent">
+                                <div class="coopDataContent-left">
+                                    <p data-translate="coop_connect_data_description">Введите ник отправителя, чтобы начать синхронизацию.</p>
+                                    <input type="text" id="coop-send-room" class="main-page-input" placeholder="Введите ник отправителя" autocomplete="on" data-translate-placeholder="coop_room_placeholder">
+                                </div>
+                                <p id="coop-send-status" class="coop-status">Введите ник отправителя и присоединитесь</p>
+                                <div class="coopDataContent-right" id="coop-send-debug">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="data hiden" id="coopRecive">
+                        <div id="coopConnectData" class="coopData coopConnectData" style="min-height: 250px; background-color: #181818; border-radius: 8var(--br)px; margin-bottom: 10px; padding: 10px;">
+                            <div id="coop-connect-head" class="coop-connect-head">
+                                <h3 data-translate="coop_connect_data">Данные подключения</h3>
+                                <button id="coop-recive-connect-button" class="action-button secondary" data-translate="coop_connect">Подключиться</button>
+                            </div>
+                            <div class="coopDataContent">
+                                <div class="coopDataContent-left">
+                                    <p data-translate="coop_connect_data_description_recivera">Введите ник получателя, чтобы начать синхронизацию.</p>
+                                    <input type="text" id="coop-recive-room" class="main-page-input" placeholder="Введите ник получателя" autocomplete="on" data-translate-placeholder="coop_room_placeholder">
+                                </div>
+                                <p id="coop-recive-status" class="coop-status">Введите ник получателя и присоединитесь</p>
+                                <div class="coopDataContent-right" id="coop-recive-debug">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div id="coopMaintData" class="coopData coopMainData" style="min-height: 750px; background-color: #181818; border-radius: var(--br)"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="psviazi" class="page psviazi">
+            <div class="list-container">
+                <iframe id="iframe-sviazi" src="sviazi.html" style="min-height: 88vh;" frameborder="0"></iframe>
+            </div>
+        </div>
+        <div id="popenfiles" class="page popenfiles">
+            <div id="openfiles_container">
+                <div class="list-header">
+                    <div class="reform-title">
+                        <div class="tooltip-container">
+                            <button id="back-to-main" class="icon-action-button back newabtn" title="Назад" onclick="     const pageId = 'main';     document.querySelectorAll('.page').forEach(page => {     page.classList.remove('active');     });     document.getElementById(pageId)?.classList.add('active');">
+                                <img src="img/ui/back.svg">
+                            </button>
+                            <div class="tooltip" data-translate="back">Назад</div>
+                        </div>
+                        <h2>Выберите файл для загрузки</h2>
+                    </div>
+                    <div class="header-actions">
+                        <!--div class="tooltip-container">
+                            <button onclick="openScenarioFileChoser()" class="icon-action-button add newabtn" title="Получить сценарий">
+                                <img src="img/ui/file/attach.svg">
+                            </button>
+                            <div class="tooltip">Открыть сторонний файл</div>
+                        </div-->
+                        <div class="tooltip-container">
+                            <button id="coop-actions-button" class="icon-action-button more" title="Действия" onclick="const dropdown = document.getElementById('opfileActionsDropdown'); dropdown.classList.toggle('active');">
+                                <img src="img/ui/more.svg">
+                            </button>
+                            <div id="opfileActionsDropdown" class="dropdown-menu">
+                                <a href="#" class="menu-item" id="blank" onclick="openScenarioFileChoser()">
+                                    <img src="img/ui/file/attach.svg">
+                                    <span>Открыть сторонний файл</span>
+                                </a>
+                                <a href="#" class="menu-item" id="blank" onclick="openScenarioLinkChoser()">
+                                    <img src="img/ui/file/attach.svg">
+                                    <span>Открыть файл из интернета</span>
+                                </a>
+                            </div>
+                            <div class="tooltip">Tools</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Модальное окно фильтра -->
+        <div id="filter-modal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" data-translate="filter">Фильтр</h3>
+                    <button class="close-modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="filter-form">
+                        <div class="form-group">
+                            <label for="filter-operator" data-translate="filter_operator">Оператор:</label>
+                            <select id="filter-operator" class="main-page-input">
+                                <!-- Опции добавляются динамически -->
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="filter-value" data-translate="filter_value">Значение:</label>
+                            <div id="filter-value-container">
+                                <!-- Поле ввода добавляется динамически -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button id="clear-filter" class="action-button secondary" data-translate="filter_clear">Сбросить</button>
+                    <button id="apply-filter" class="action-button" data-translate="filter_apply">Применить</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Модальное окно фильтра событий -->
+        <div id="events-filter-modal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" data-translate="filter">Фильтр</h3>
+                    <button class="close-modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="filter-form">
+                        <div class="form-group">
+                            <label for="events-filter-operator" data-translate="filter_operator">Оператор:</label>
+                            <select id="events-filter-operator" class="main-page-input">
+                                <!-- Опции добавляются динамически -->
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="events-filter-value" data-translate="filter_value">Значение:</label>
+                            <div id="events-filter-value-container">
+                                <!-- Поле ввода добавляется динамически -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button id="events-filter-clear" class="action-button secondary" data-translate="filter_clear">Сбросить</button>
+                    <button id="events-filter-apply" class="action-button" data-translate="filter_apply">Применить</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Модальное окно для фильтра групп -->
+        <div id="groups-filter-modal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" data-translate="filter_groups">Фильтр по группам</h3>
+                    <button class="close-modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="filter-form">
+                        <div class="groups-list" id="groups-filter-list">
+                            <!-- Чекбоксы будут добавлены динамически -->
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button id="groups-filter-clear" class="action-button secondary" data-translate="filter_clear">Сбросить</button>
+                    <button id="groups-filter-apply" class="action-button" data-translate="filter_apply">Применить</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Модальное окно для фильтра групп стран -->
+        <div id="countries-groups-filter-modal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" data-translate="filter_groups">Фильтр по группам</h3>
+                    <button class="close-modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="filter-form">
+                        <div class="groups-list" id="countries-groups-filter-list">
+                            <!-- Чекбоксы будут добавлены динамически -->
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button id="countries-groups-filter-clear" class="action-button secondary" data-translate="filter_clear">Сбросить</button>
+                    <button id="countries-groups-filter-apply" class="action-button" data-translate="filter_apply">Применить</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Модальное окно массовых отношений -->
+        <div id="massRelationModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 data-translate="mass_relation">Массовые отношения</h3>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label data-translate="select_relation_type">Выберите тип отношений</label>
+                        <select id="massRelationType" class="param-relation-type main-page-input" title="Тип отношений">
+                            <option value="allies" data-translate="allies">Союзники</option>
+                            <option value="enemies" data-translate="enemies">Враги</option>
+                            <option value="guaranteed" data-translate="independence_guarantees">Гарантии независимости</option>
+                            <option value="guaranteed_by" data-translate="guaranteed_by">Гарантии от</option>
+                            <option value="pacts" data-translate="pacts">Пакты</option>
+                            <option value="sanctions" data-translate="sanctions">Санкции</option>
+                            <option value="vassals" data-translate="vassals">Вассалы</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label data-translate="relation_turn">Ход</label>
+                        <input type="number" class="param-turn main-page-input" value="0" min="0" title="Ход" placeholder="Ход">
+                    </div>
+                    <div class="form-group">
+                        <label data-translate="relation_duration">Длительность</label>
+                        <input type="number" class="param-duration main-page-input" value="" min="0" title="Длительность" placeholder="Длительность">
+                    </div>
+                    <div class="form-group">
+                        <label data-translate="relation_initiator">Инициатор</label>
+                        <select class="param-initiator main-page-input" title="Инициатор">
+                            <option value="false" data-translate="no">Нет</option>
+                            <option value="true" data-translate="yes">Да</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="modal-button secondary" data-action="cancel" data-translate="cancel" onclick="window.countryManager.closeMassRelationModal()">Отмена</button>
+                    <button class="modal-button primary" data-action="apply" data-translate="apply" onclick="window.countryManager.saveMassRelationModal()">Применить</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Модальное окно для копирования параметров -->
+        <div id="param-copy-modal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" data-translate="transfer_params">Перенести параметры</h3>
+                    <button class="close-modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <select id="param-copy-select1" class="main-page-input">
+                        <option value=""></option>
+                        <option value="population_limit" data-translate="population">Население</option>
+                        <option value="infrastructure_level" data-translate="economic">Экономика</option>
+                        <option value="relief" data-translate="relief">Рельеф</option>
+                        <option value="water" data-translate="water">Вода</option>
+                        <option value="river" data-translate="river">Река</option>
+                        <option value="resource_rule" data-translate="resources">Ресурсы</option>
+                        <!--option value="resource_rule.wood" data-translate="wood">Древесина</option>
+                        <option value="resource_rule.iron" data-translate="iron">Железо</option>
+                        <option value="resource_rule.gold" data-translate="gold">Золото</option>
+                        <option value="resource_rule.oil" data-translate="oil">Нефть</option>
+                        <option value="resource_rule.uranium" data-translate="uranium">Уран</option-->
+                    </select>
+                    <select id="param-copy-select2" class="main-page-input">
+                        <option value=""></option>
+                        <option value="population_limit" data-translate="population">Население</option>
+                        <option value="infrastructure_level" data-translate="economic">Экономика</option>
+                        <option value="relief" data-translate="relief">Рельеф</option>
+                        <option value="water" data-translate="water">Вода</option>
+                        <option value="river" data-translate="river">Река</option>
+                        <option value="resource_rule" data-translate="resources">Ресурсы</option>
+                        <!--option value="resource_rule.wood" data-translate="wood">Древесина</option>
+                        <option value="resource_rule.iron" data-translate="iron">Железо</option>
+                        <option value="resource_rule.gold" data-translate="gold">Золото</option>
+                        <option value="resource_rule.oil" data-translate="oil">Нефть</option>
+                        <option value="resource_rule.uranium" data-translate="uranium">Уран</option-->
+                    </select>
+                    <select id="param-copy-select3" class="main-page-input">
+                        <option value=""></option>
+                        <option value="population_limit" data-translate="population">Население</option>
+                        <option value="infrastructure_level" data-translate="economic">Экономика</option>
+                        <option value="relief" data-translate="relief">Рельеф</option>
+                        <option value="water" data-translate="water">Вода</option>
+                        <option value="river" data-translate="river">Река</option>
+                        <option value="resource_rule" data-translate="resources">Ресурсы</option>
+                        <!--option value="resource_rule.wood" data-translate="wood">Древесина</option>
+                        <option value="resource_rule.iron" data-translate="iron">Железо</option>
+                        <option value="resource_rule.gold" data-translate="gold">Золото</option>
+                        <option value="resource_rule.oil" data-translate="oil">Нефть</option>
+                        <option value="resource_rule.uranium" data-translate="uranium">Уран</option-->
+                    </select>
+                    <select id="param-copy-select4" class="main-page-input">
+                        <option value=""></option>
+                        <option value="population_limit" data-translate="population">Население</option>
+                        <option value="infrastructure_level" data-translate="economic">Экономика</option>
+                        <option value="relief" data-translate="relief">Рельеф</option>
+                        <option value="water" data-translate="water">Вода</option>
+                        <option value="river" data-translate="river">Река</option>
+                        <option value="resource_rule" data-translate="resources">Ресурсы</option>
+                        <!--option value="resource_rule.wood" data-translate="wood">Древесина</option>
+                        <option value="resource_rule.iron" data-translate="iron">Железо</option>
+                        <option value="resource_rule.gold" data-translate="gold">Золото</option>
+                        <option value="resource_rule.oil" data-translate="oil">Нефть</option>
+                        <option value="resource_rule.uranium" data-translate="uranium">Уран</option-->
+                    </select>
+                    <select id="param-copy-select5" class="main-page-input">
+                        <option value=""></option>
+                        <option value="population_limit" data-translate="population">Население</option>
+                        <option value="infrastructure_level" data-translate="economic">Экономика</option>
+                        <option value="relief" data-translate="relief">Рельеф</option>
+                        <option value="water" data-translate="water">Вода</option>
+                        <option value="river" data-translate="river">Река</option>
+                        <option value="resource_rule" data-translate="resources">Ресурсы</option>
+                        <!--option value="resource_rule.wood" data-translate="wood">Древесина</option>
+                        <option value="resource_rule.iron" data-translate="iron">Железо</option>
+                        <option value="resource_rule.gold" data-translate="gold">Золото</option>
+                        <option value="resource_rule.oil" data-translate="oil">Нефть</option>
+                        <option value="resource_rule.uranium" data-translate="uranium">Уран</option-->
+                    </select>
+                </div>
+                <div class="modal-footer">
+                    <!--button id="params-copy-clipboard" class="action-button secondary" data-translate="copyToClipboard">Копировать в Clipboard</button-->
+                    <button id="params-copy-copy" class="action-button secondary" data-translate="copy" onclick="copyParam(document.getElementById('param-copy-select1').value, document.getElementById('param-copy-select2').value, document.getElementById('param-copy-select3').value, document.getElementById('param-copy-select4').value, document.getElementById('param-copy-select5').value)">Копировать</button>
+                    <button id="params-copy-paste" class="action-button" data-translate="filter_apply" onclick="pasteParam(document.getElementById('param-copy-select1').value, document.getElementById('param-copy-select2').value, document.getElementById('param-copy-select3').value, document.getElementById('param-copy-select4').value, document.getElementById('param-copy-select5').value)">Вставить</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-nav">
+            <button class="nav-button active" data-page="main">
+                <img src="img/ui/home.svg">
+                <span class="button-text">Редактор</span>
+            </button>
+            <button class="nav-button" data-page="countries" onclick="window.countryManager.updateCountriesList()">
+                <img src="img/ui/flag.svg">
+                <span class="button-text">Страны</span>
+            </button>
+            <button class="nav-button" data-page="events">
+                <img src="img/ui/calendar.svg">
+                <span class="button-text">События</span>
+            </button>
+            <button class="nav-button dev_thing" data-page="map-edit">
+                <svg class="button-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                </svg>
+                <span class="button-text">Карта</span>
+            </button>
+        </div>
+    </body>
+        <script src="js/coop/coop-connect-send.js"></script>
+        <script src="js/coop/coop-connect-recive.js"></script>
+</html>

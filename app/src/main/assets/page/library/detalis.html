@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scenario Info | EEditor</title>
+    <!--link rel="icon" type="image/x-icon" href="../../img/ico/ico.svg"-->
+        <link rel="icon" type="image/x-icon" href="../../img/library/icon.svg">
+        <link rel="stylesheet" href="../../css/!.css">
+        <link rel="stylesheet" href="../../css/base.css">
+        <link rel="stylesheet" href="../../css/library.css">
+        <link rel="stylesheet" href="../../css/head.css">
+        <link rel="stylesheet" href="../../css/list.css">
+        <link rel="stylesheet" href="../../css/style.css">
+        <link rel="stylesheet" href="../../css/head.css">
+        <link rel="stylesheet" href="download.css">
+        <link rel="stylesheet" href="upload/upload.css">
+        <link rel="stylesheet" href="../../css/notification.css">
+    <script src="../../js/language.js"></script>
+    <script src="../../js/translator.js"></script>
+    <script src="scenariolist.js"></script>
+    <script src="authorlist.js"></script>
+    <script src="maplist.js"></script>
+    <script src="downloadlist.js"></script>
+    <script src="../../js/head.js"></script>
+    <script src="../../js/auth.js"></script>
+    <script src="../../js/notification.js"></script>
+    <script src="discordtext.js"></script>
+    <!--script src="upload/upload.js"></script-->
+    <script src="detalis.js"></script>
+</head>
+<body>
+    <nav class="nav-header">
+        <div class="header-logo-container">
+            <img class="header-logo" src="../../img/library/icon.svg" alt="EEditor Lib">
+            <h class="header-title">EEditor Lib</h>
+        </div>
+        <br>
+        <button href="../../index.html" id="back-to-reforms" class="action-button back" title="Return to editor" data-tooltip="Вернуться к редактору" onclick="window.location.href = '../../index.html'">
+            <img src="../../img/ui/back.svg">
+        </button>
+        <a href="download.html?category=scenarios" class="nav-button" data-page="scenarios" data-translate="scenarios">Сценарии</a>
+        <a href="download.html?category=maps" class="nav-button" data-page="maps" data-translate="maps">Карты</a>
+        <div class="nav-actions">
+            <div class="nav-icons">
+                <button id="settings-button" class="icon-action-button settings" title="Настройки">
+                    <img src="../../img/ui/settings.svg">
+                </button>
+                <div class="language-switcher">
+                    <button id="currentLangChooser" class="icon-action-button lang" title="Language">
+                        <span class="lang-icon">
+                            <img src="../../img/ui/world.svg">
+                        </span>
+                    </button>
+                    <div id="currentLang" class="void"></div>
+                    <div id="langDropdown" class="lang-dropdown">
+                        <a href="#" data-lang="en">
+                            <img src="../../img/lang/en.svg" class="lang-flag" alt="English">
+                                English
+                        </a>
+                        <a href="#" data-lang="ru">
+                            <img src="../../img/lang/ru.svg" class="lang-flag" alt="Русский">
+                                Русский
+                        </a>
+                        <a href="#" data-lang="uk">
+                            <img src="../../img/lang/uk.svg" class="lang-flag" alt="Українська">
+                                Українська
+                        </a>
+                        <a href="#" data-lang="mo">
+                            <img src="../../img/lang/mo.svg" class="lang-flag" alt="Молдовеняскэ">
+                                Молдовеняскэ
+                        </a>
+                        <a href="#" data-lang="be">
+                            <img src="../../img/lang/be.svg" class="lang-flag" alt="Беларуская">
+                                Беларуская (часткова)
+                        </a>
+                        <a href="#" data-lang="kk">
+                            <img src="../../img/lang/kk.svg" class="lang-flag" alt="Қазақша">
+                                Қазақша (ішінара)
+                        </a>
+                    </div>
+                </div>
+                <button id="account-button" class="icon-action-button account" title="Аккаунт">
+                    <img class="account-button-avatar" src="" alt="" style="display: none; width: 24px; height: 24px; border-radius: 50%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+                    <img src="../../img/ui/user.svg">
+                </button>
+                <div id="accountDropdown" class="account-dropdown">
+                    <div class="account-info">
+                        <img class="account-avatar" src="" alt="Avatar" style="width: 32px; height: 32px; border-radius: 50%; margin-right: 8px; display: none;">
+                        <div>
+                            <div class="account-name">Гость</div>
+                            <div class="account-id">#0000</div>
+                        </div>
+                    </div>
+                    <div class="account-divider"></div>
+                    <a href="#" class="account-item" data-action="login">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15 3H19C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M10 17L15 12L10 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M15 12H3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span data-translate="login">Войти через Discord</span>
+                    </a>
+                    <a href="#" class="account-item" data-action="register">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 21V19C16 17.9391 15.5786 16.9217 14.8284 16.1716C14.0783 15.4214 13.0609 15 12 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M8.5 11C10.7091 11 12.5 9.20914 12.5 7C12.5 4.79086 10.7091 3 8.5 3C6.29086 3 4.5 4.79086 4.5 7C4.5 9.20914 6.29086 11 8.5 11Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M20 8V14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M23 11H17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span data-translate="register">Регистрация</span>
+                    </a>
+                    <div class="account-divider"></div>
+                    <a href="#" class="account-item" data-action="settings">
+                        <img src="../../img/ui/settings.svg">
+                        <span data-translate="settings">Настройки</span>
+                    </a>
+                    <a href="#" class="account-item" data-action="logout">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M16 17L21 12L16 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M21 12H9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span data-translate="logout">Выйти</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="content-library-scenario">
+        <div class="header-scenario">
+            <h1 id="scenario-name">Scenario name</h1>
+            <!--div class="nav-icons">
+                <input type="file" id="scenario-file" accept=".json" style="display: none;">
+                <input type="file" id="image-file" accept="image/*" style="display: none;">
+                <button class="action-button" id="upload-scenario-btn">
+                    <span class="button-text">Сценарий</span>
+                </button>
+                <button class="action-button" id="upload-image-btn">
+                    <span class="button-text">Картинка</span>
+                </button>
+            </div-->
+            <div class="nav-icons">
+                <button class="downloadButtonDetalis" id="downloadMapDetalis">
+                    Map
+                    <img src="../../img/ui/file/download.svg" class="download-info-ico">
+                </button>
+                <button class="downloadButtonDetalis" id="downloadScenarioDetalis">
+                    Scenario
+                    <img src="../../img/ui/file/download.svg" class="download-info-ico">
+                </button>
+            </div>
+        </div>
+        <div class="params-scenario-library">
+            <div class="mainform">
+                <div class="form-element">
+                    <label data-translate="name">Name</label>
+                    <input readonly type="text" id="scenarioTitle" title="title" autocomplete="off">
+                </div>
+                <div class="form-element">
+                    <label data-translate="author">Author</label>
+                    <input readonly type="text" id="scenarioAuthor" title="title" autocomplete="off">
+                </div>
+                <div class="form-element">
+                    <label data-translate="map">Map</label>
+                    <input readonly type="text" id="scenarioMap" title="title" autocomplete="off">
+                </div>
+                <div class="form-element">
+                    <label data-translate="language">Language</label>
+                    <select id="scenarioLang" autocomplete="off">
+                        <option value="EN">English</option>
+                        <option value="RU">Русский</option>
+                        <option value="UK">Українська</option>
+                        <option value="MO">Молдовеняскэ</option>
+                        <option value="be">Беларуская</option>
+                        <option value="kk">Қазақша</option>
+                        <option value="de">Deutsch</option>
+                        <option value="fr">Français</option>
+                        <option value="es">Español</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-element">
+                    <label data-translate="dateofupload">Date of upload</label>
+                    <input readonly type="text" id="scenarioPublish" title="title" autocomplete="off">
+                </div>
+                <div class="form-element">
+                    <label data-translate="dateofupdate">Date of update</label>
+                    <input readonly type="text" id="scenarioUpdate" title="title" autocomplete="off">
+                </div>
+                <div class="form-element">
+                    <label data-translate="provinces">Count of provinces</label>
+                    <input readonly type="text" id="scenarioProvinces" title="title" autocomplete="off">
+                </div>
+                <div class="form-element">
+                </div>
+                <div class="form-element">
+                    <label data-translate="economic">Economic</label>
+                    <select readonly id="scenarioEconomy" autocomplete="off">
+                        <option value="none">No</option>
+                        <!--option value="partially">Частично</option>
+                        <option value="developing">В разработке</option-->
+                        <option value="yes">Yes</option>
+                    </select>
+                </div>
+                <!--div class="form-element">
+                    <label>Население</label>
+                    <select id="title" autocomplete="off">
+                        <option value="none">Нету</option>
+                        <option value="partially">Частично</option>
+                        <option value="developing">В разработке</option>
+                        <option value="yes">Есть</option>
+                    </select>
+                </div-->
+                <div class="form-element">
+                    <label data-translate="resources">Resources</label>
+                    <select readonly id="scenarioResources" autocomplete="off">
+                        <option value="none">No</option>
+                        <!--option value="partially">Частично</option>
+                        <option value="developing">В разработке</option-->
+                        <option value="yes">Yes</option>
+                    </select>
+                </div>
+                <!--div class="form-element">
+                    <label>Дипломатия</label>
+                    <select id="title" autocomplete="off">
+                        <option value="none">Нету</option>
+                        <option value="partially">Частично</option>
+                        <option value="developing">В разработке</option>
+                        <option value="yes">Есть</option>
+                    </select>
+                </div>
+                <div class="form-element">
+                    <label>Восстания</label>
+                    <select id="title" autocomplete="off">
+                        <option value="none">Нету</option>
+                        <option value="partially">Частично</option>
+                        <option value="developing">В разработке</option>
+                        <option value="yes">Есть</option>
+                    </select>
+                </div-->
+                <div class="form-element">
+                    <label data-translate="reforms">Reforms</label>
+                    <select readonly id="scenarioReforms" autocomplete="off">
+                        <option value="none">No</option>
+                        <!--option value="partially">Частично</option>
+                        <option value="developing">В разработке</option-->
+                        <option value="yes">Yes</option>
+                    </select>
+                </div>
+                <div class="form-element">
+                    <label data-translate="events">Events</label>
+                    <input readonly type="text" id="scenarioEvents" title="title" autocomplete="off">
+                </div>
+            </div>
+            <div class="bigform">
+                <image id="screenshoot" class="screenshoot" src="../../img/library/none.png" alt="screenshoot">
+                <div class="description" id="description">
+                    <!--textarea readonly class="description-text" id="description-text" title="description" placeholder="Описание">
+                        название, автор, описание, дата загрузки, дата обновления, категории (выбор из доступных), язык скриншот, наличие настроенных: экономики, населения, рессурсов, дипломатии, восстаний, реформ, ивентов (выбор в виде dropdown: есть, частично, в разработке, нету), для какой карты предназначен, количество провинций
+                    </textarea-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

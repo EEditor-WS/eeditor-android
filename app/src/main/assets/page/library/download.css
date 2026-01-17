@@ -1,0 +1,554 @@
+.download-up {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.download-awards {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+
+.download-status {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 4px 8px;
+    border-radius: var(--br);
+    font-size: 12px;
+    font-weight: 500;
+    color: white;
+    z-index: 1;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+}
+
+.status-early_access {
+    background-color: #2ecc71;
+}
+
+.status-in_development {
+    background-color: #3498db;
+}
+
+.status-discontinued {
+    background-color: #e74c3c;
+}
+
+.status-beta {
+    background-color: #f1c40f;
+}
+
+.status-alpha {
+    background-color: #e67e22;
+}
+
+.status-stable, .status-release, .status-completed {
+    background-color: #27ae60;
+}
+
+.status-archived {
+    background-color: #95a5a6;
+}
+
+.status-experimental {
+    background-color: #9b59b6;
+}
+
+.download-award {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center
+}
+
+.download-award-name {
+    margin-top: 8px;
+    font-size: 14px;
+    max-width: 100px;
+}
+
+.download-cards {
+    display: flex; /* Используем flexbox для расположения карточек */
+    flex-wrap: wrap; /* Позволяем карточкам переноситься на новую строку */
+    justify-content: flex-start; /* Распределяем карточки по ширине контейнера */
+    flex: 1;
+    gap: 20px; /* Отступы между карточками */
+    justify-content: space-evenly; /* Распределяем карточки равномерно */
+}
+
+.download-card {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: var(--br);
+}
+
+.download-image-container {
+    position: relative;
+    width: 250px;
+    border-radius: var(--br);
+    overflow: hidden;
+}
+
+.download-goto-page {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform 0.2s ease;
+}
+
+.download-goto-page:hover {
+    transform: scale(1.02);
+}
+
+.download-award-img {
+    width: 100%;
+}
+
+.download-info-ico {
+    width: 24px;
+    color: #ffffff;
+    padding: 3px;
+}
+
+.download-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.download-row a {
+    max-width: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+.download-row-big {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.download-tags {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.download-tags > * {
+    /* Стили для дочерних элементов div */
+    margin: 1px; /* Добавляем отступы между элементами */
+}
+
+.tooltip-container {
+    position: relative;
+    display: inline-block;
+}
+
+.lib-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+    gap: 10px;
+    width: 100%;
+}
+
+.download-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    background-color: var(--background-secondary);
+    border-radius: var(--br);
+    width: 100%;
+}
+
+.icon-action-button[id="filters"], .icon-action-button.filters {
+  background-color: rgba(231, 220, 60, 0.12);
+  color: #ffc400;
+}
+
+/* Filter Container */
+.lib-filters {
+    background-color: var(--background-secondary);
+    border-radius: var(--br);
+    padding: 16px;
+    margin-right: 16px;
+    width: 280px;
+    transition: transform 0.3s ease;
+    display: none;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+}
+
+.lib-filters.active {
+    display: block;
+}
+
+/* Filter Header */
+.lib-filters-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.lib-filters-header h3 {
+    margin: 0;
+    font-size: 1.1em;
+    color: var(--text-primary);
+}
+
+.collapse-filters {
+    background: none;
+    border: none;
+    color: var(--text-primary);
+    cursor: pointer;
+    padding: 4px;
+    transition: transform 0.3s ease;
+}
+
+/* Filter Content */
+.lib-filters-content {
+    transition: max-height 0.3s ease;
+}
+
+.lib-filters-content.collapsed {
+    max-height: 0;
+    overflow: hidden;
+}
+
+/* Filter Groups */
+.filter-group {
+    margin-bottom: 16px;
+    border: 1px solid var(--border-color);
+    border-radius: var(--br);
+}
+
+.filter-group-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 12px;
+    cursor: pointer;
+    background-color: var(--background-tertiary);
+    border-radius: var(--br) 4px 0 0;
+}
+
+.filter-group-header label {
+    margin: 0;
+    font-size: 0.9em;
+    color: var(--text-primary);
+    cursor: pointer;
+}
+
+.collapse-filter-group {
+    background: none;
+    border: none;
+    color: var(--text-primary);
+    cursor: pointer;
+    padding: 0;
+    font-size: 0.8em;
+    transition: transform 0.3s ease;
+}
+
+.filter-group-content {
+    padding: 12px;
+    background-color: var(--background-secondary);
+    transition: all 0.3s ease;
+}
+
+.filter-group-content.collapsed {
+    padding: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+.collapse-filter-group.collapsed {
+    transform: rotate(-90deg);
+}
+
+/* Search Input */
+.lib-search {
+    width: 95%;
+    padding: 8px;
+    border: 1px solid var(--border-color);
+    border-radius: var(--br);
+    background-color: var(--background-primary);
+    color: var(--text-primary);
+}
+
+/* Select Inputs */
+.filter-group select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid var(--border-color);
+    border-radius: var(--br);
+    background-color: var(--background-primary);
+    color: var(--text-primary);
+}
+
+/* Checkbox List */
+.checkbox-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.checkbox-list label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    color: var(--text-primary);
+    font-size: 0.9em;
+}
+
+.checkbox-list input[type="checkbox"] {
+    margin: 0;
+    cursor: pointer;
+}
+
+/* Clear Filters Button */
+.clear-filters-btn {
+    width: 100%;
+    padding: 8px;
+    background-color: var(--background-tertiary);
+    color: var(--text-primary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--br);
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.clear-filters-btn:hover {
+    background-color: var(--background-hover);
+}
+
+/* Layout */
+.lib-down {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .lib-down {
+        flex-direction: column;
+    }
+
+    .lib-filters {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 16px;
+    }
+}
+
+.download-title {
+    text-decoration: none; /* Убирает подчеркивание */
+    color: white; /* Делает текст белым */
+    font-size: 35px; /* Размер шрифта */
+    font-weight: bold; /* Жирный шрифт */
+    text-align: center;
+}
+
+.download-goto-page:hover {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.nav-header {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    flex-direction: row;
+}
+
+.mainform {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-element {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.form-element label {
+    color: var(--text-secondary);
+    font-size: 0.9em;
+}
+
+/*.form-element input,
+.form-element select {
+    padding: 8px;
+    border: 1px solid var(--border-color);
+    border-radius: var(--br);
+    background-color: var(--background-primary);
+    color: var(--text-primary);
+}*/
+
+.form-element input[type="date"] {
+    color-scheme: dark;
+}
+
+.download-down {
+    height: 100%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+/* Modal styles */
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-overlay.active {
+    display: flex;
+}
+
+.modal-content {
+    background-color: var(--background-secondary);
+    padding: 20px;
+    border-radius: var(--br);
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.modal-header {
+    margin-bottom: 15px;
+}
+
+.modal-header h3 {
+    margin: 0;
+    color: var(--text-primary);
+}
+
+.modal-body {
+    margin-bottom: 20px;
+    color: var(--text-secondary);
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.modal-button {
+    padding: 8px 16px;
+    border-radius: var(--br);
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.modal-button.primary {
+    background-color: #44944A;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+
+.modal-button.primary:hover {
+    background-color: #367a3a;
+}
+
+.modal-button.secondary {
+    background-color: var(--background-tertiary);
+    color: var(--text-primary);
+}
+
+.nav-button, .back {
+    background-color: rgba(52, 152, 219, 0.2);
+    color: #3498db;
+    padding: 8px 16px;
+    border-radius: var(--br);
+    height: 20px;
+}
+
+.gradient-overlay {
+  position: absolute; /* или relative/fixed — зависит от контекста */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+  pointer-events: none; /* чтобы элементы под градиентом оставались кликабельными */
+}
+
+.download-goto-page {
+    width: 250px; 
+    height: 156px; 
+    object-fit: cover; 
+    border-radius: var(--br) 15px 0 0;
+}
+
+.iss_full {
+    display: flex;
+}
+
+
+@media (orientation: portrait) or (max-width: 720px) {
+    .download-cards {
+        flex-direction: column; /* Переключаемся на вертикальное расположение карточек */
+        align-items: center; /* Центрируем карточки по горизонтали */
+    }
+
+    .download-card {
+        width: 100%; /* Задаем ширину карточки на всю ширину контейнера */
+        max-width: 500px; /* Ограничиваем максимальную ширину карточки */
+    }
+
+    .download-goto-page {
+        width: 100%; /* Задаем ширину изображения на всю ширину карточки */
+        height: auto; /* Высота будет автоматически подстраиваться */
+        border-radius: var(--br) 15px 0 0; /* Сохраняем радиус скругления */
+    }
+    
+    .download-image-container {
+        position: relative;
+        width: 100%;
+        border-radius: var(--br);
+        overflow: hidden;
+    }
+
+    .download-cards .download-award {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+#download-cards .map-card {
+    display: none;
+}
